@@ -19,9 +19,11 @@ Run these gates in order. A candidate that fails an early gate should not consum
 ## 3. Source-architecture gate
 
 - Several distinct sources are genuinely needed.
+- Count independent web hostnames, not just URL count; three pages on one host are not three independent source ecosystems.
 - Each source contributes a new branch-reducing fact; repeated confirmation of the same entity does not count as a full hop.
 - No single obvious query reveals the final answer together with all identifying context.
 - The last source does not become obvious merely because its title, table name, or distinctive phrase was quoted in the question.
+- The private verification path and the submitted source list match one-to-one.
 
 ## 4. Prompt-language gate
 
@@ -44,8 +46,9 @@ Prefer difficulty caused by retrieval and selection:
 - adjacency within a precisely scoped group;
 - a non-indexed but readable archival guide;
 - a source handoff where a common name has to be disambiguated.
+- a bounded enumeration over an explicitly listed set that a reviewer can reproduce quickly.
 
-Do not treat verbosity, famous facts, multiple redundant clues, calculation, or volatile information as difficulty.
+Do not treat verbosity, famous facts, multiple redundant clues, unbounded counting, calculation, or volatile information as difficulty.
 
 ## 7. Failure-legitimacy gate
 

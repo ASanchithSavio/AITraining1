@@ -8,6 +8,9 @@ Search authoritative travel material for facts that are stable, specific, and po
 - historic railway and visitor guides;
 - protected-area visitor-facility lists;
 - nomination dossiers and management plans;
+- park or heritage-site brochures;
+- historical hotel directories, tourism pamphlets, and travelogues;
+- dated airport, rail-corridor, road, resort, or visitor-centre planning documents;
 - route, trail, or station tables;
 - old tourism directories and gazetteer travel chapters.
 
@@ -38,6 +41,8 @@ final source -> one printed answer
 
 Every arrow must narrow the candidate set. Remove any source whose output is not used by the next hop.
 
+Before promotion, list the hostname of every source. The graph must meet the current independent-domain rule without counting repeated pages from one government or publisher site as separate ecosystems.
+
 ## Step 4: Choose a fair failure mechanism
 
 Best mechanisms:
@@ -47,6 +52,7 @@ Best mechanisms:
 3. Old/new spelling variants with a source that proves identity.
 4. A direction or subgroup constraint that rules out a tempting popular answer.
 5. A final cell surrounded by plausible distractors.
+6. Bounded enumeration inside a short, explicit visitor-facility, route, or accommodation list.
 
 Unsafe mechanisms:
 
@@ -56,6 +62,7 @@ Unsafe mechanisms:
 - arithmetic across several cells;
 - illegible scans;
 - a hidden assumption about whether optional activities count.
+- copying the skeleton or source network of a reference example.
 
 ## Step 5: Write the natural question
 

@@ -40,3 +40,21 @@ When the user tests a candidate in the required target model, record:
 - automated-review messages;
 - whether the cause was model retrieval, prompt ambiguity, or incorrect ground truth;
 - the smallest design change supported by that evidence.
+
+## 2026-08-03 — live rule and all-domain audit
+
+### What changed
+
+- Read the complete prompt/review workflow and the domain-strategy material for every listed domain in a signed-in, read-only session.
+- Confirmed that source independence is stricter than raw URL count: repeated pages from the same host can fail the architecture gate.
+- Confirmed that valid hardness comes from in-domain chaining, exact scope, contextual table reading, confusable names, or bounded enumeration—not arithmetic or ambiguity.
+- Added a cross-domain method, domain strategy map, rejection taxonomy, and evidence-driven training loop under `docs/general/`.
+- Retired the two local untested Travel candidates because their several URLs resolve to only two hostnames. No model test was run.
+
+### Travel consequence
+
+The next Travel candidate must be mined across at least three genuinely independent publication ecosystems from the start. Adding another page from the same district or agency site is not a repair. Prefer stable brochures, heritage or nomination dossiers, historical guidebooks, management plans, transport publications, and infrastructure records with directly readable text.
+
+### Confidentiality
+
+Exact platform language, account context, candidate prompts, URLs, reviewer-specific material, and private screenshots remain outside version control. Public files contain only generalized methods.

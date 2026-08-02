@@ -8,6 +8,15 @@ This repository intentionally excludes client/platform instructions, copied subm
 
 ## Read order
 
+Start with the reusable method:
+
+1. [`docs/general/core-method.md`](docs/general/core-method.md)
+2. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
+3. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
+4. [`docs/general/training-loop.md`](docs/general/training-loop.md)
+
+Then load the active domain pack. For Travel:
+
 1. [`docs/travel/review-gates.md`](docs/travel/review-gates.md)
 2. [`docs/travel/failure-patterns.md`](docs/travel/failure-patterns.md)
 3. [`docs/travel/design-rubric.md`](docs/travel/design-rubric.md)
@@ -20,7 +29,8 @@ This repository intentionally excludes client/platform instructions, copied subm
 2. Choose a stable, obscure, directly printed final fact before writing the question.
 3. Verify the fact visually and textually in its authoritative source.
 4. Build backward through source handoffs that each eliminate a real alternative.
-5. Run the deterministic review gates before spending a model test.
-6. Test only with the required target model.
-7. Record the exact outcome locally, including why the model or the prompt failed.
-8. Promote only generalized, non-confidential lessons into this repository.
+5. Confirm that the required sources are independent, including separate web hosts when the benchmark requires them.
+6. Run the deterministic review gates before spending a model test.
+7. Test only with the required target model.
+8. Record the exact outcome locally, including why the model or the prompt failed.
+9. Promote only generalized, non-confidential lessons into this repository.

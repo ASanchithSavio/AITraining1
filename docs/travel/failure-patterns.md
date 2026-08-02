@@ -10,6 +10,9 @@
 | Ambiguous superlative | Phrases such as “biggest dam” or “constructed without cement” can identify different places depending on the category used. | State a source-backed category and add a discriminator that leaves one entity. |
 | Wall-to-wall source map | Naming the exact document for every hop converts research into a scripted lookup and can expose the final page. | Attribute only what is necessary; pose one question and let the solver discover the route. |
 | Source-count illusion | Three links all establish the same place, while the answer comes from one unrelated link. | Draw a source graph and require a distinct output from every node. |
+| URL-count illusion | Several pages are cited, but they come from only one or two web hosts. | Count independent hostnames during preflight and replace redundant same-host pages with necessary sources from separate ecosystems. |
+| Famous-example fingerprint | A chain copies the skeleton, edge case, or source network of a published reference task. | Re-mine the terminal fact and construct an original graph; cosmetic entity swaps are not new architecture. |
+| One-off stochastic miss | A candidate fails once but the model reliably solves the same chain in other fresh runs or automated evaluation. | Treat difficulty as a repeatability target; replace the reliably solved hop rather than adding filler. |
 | Model-correct “failure” | A complicated prompt feels hard, but the target model returns the verified answer. | Discard it. Complexity without an incorrect final answer is not a failure. |
 | Wrong gold answer | The selected row/year/entity was never independently verified, so the model appears wrong while it is correct. | Verify primary-source row alignment before testing. |
 
@@ -23,4 +26,4 @@ The useful pattern was answer-first construction:
 4. Use sequence, scope, or spelling handoffs that can produce a plausible wrong answer.
 5. Keep the requested output atomic.
 
-The failed Travel designs generally began with a popular place and tried to add difficulty afterward. That produces longer prompts, not harder retrieval.
+The failed Travel designs generally began with a popular place and tried to add difficulty afterward. That produces longer prompts, not harder retrieval. Multiple pages from the same official destination site do not repair the architecture.
