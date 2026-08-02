@@ -1,0 +1,26 @@
+# Travel failure patterns
+
+## Observed classes
+
+| Pattern | Why it fails | Repair |
+|---|---|---|
+| Famous-property funnel | Several clues collapse immediately to a well-known destination, after which the final timetable or station fact is directly indexed. | Start from the obscure final record, then build backward through less-indexed handoffs. |
+| Precision calculation | The answer depends on subtracting values read from a scan. OCR and rounding create multiple plausible decimals, and arithmetic may be disallowed. | Ask for one value exactly as printed in a clearly scoped cell. |
+| Live visit-cost question | Admission, shuttles, activities, parking, and optional items vary over time and by visitor choice. “Visit fully” and “highly rated” are subjective. | Use a dated official tariff only if the benchmark permits time-bound answers; otherwise choose a stable fact. |
+| Ambiguous superlative | Phrases such as “biggest dam” or “constructed without cement” can identify different places depending on the category used. | State a source-backed category and add a discriminator that leaves one entity. |
+| Wall-to-wall source map | Naming the exact document for every hop converts research into a scripted lookup and can expose the final page. | Attribute only what is necessary; pose one question and let the solver discover the route. |
+| Source-count illusion | Three links all establish the same place, while the answer comes from one unrelated link. | Draw a source graph and require a distinct output from every node. |
+| Model-correct “failure” | A complicated prompt feels hard, but the target model returns the verified answer. | Discard it. Complexity without an incorrect final answer is not a failure. |
+| Wrong gold answer | The selected row/year/entity was never independently verified, so the model appears wrong while it is correct. | Verify primary-source row alignment before testing. |
+
+## Why earlier successful designs were different
+
+The useful pattern was answer-first construction:
+
+1. Select a stable, obscure, directly printed answer.
+2. Confirm the exact row or passage.
+3. Work backward through several authoritative sources.
+4. Use sequence, scope, or spelling handoffs that can produce a plausible wrong answer.
+5. Keep the requested output atomic.
+
+The failed Travel designs generally began with a popular place and tried to add difficulty afterward. That produces longer prompts, not harder retrieval.
