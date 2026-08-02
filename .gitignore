@@ -1,0 +1,5 @@
+# Keep client- or platform-specific evidence local.
+private/
+evidence/
+screenshots/
+*.local.md
