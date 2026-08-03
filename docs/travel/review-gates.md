@@ -15,6 +15,7 @@ Run these gates in order. A candidate that fails an early gate should not consum
 - It is looked up or selected, not derived through arithmetic.
 - It is not a yes/no choice, an alternative pair, a range, or a sentence.
 - Small OCR or rounding differences cannot decide whether the model passed.
+- The stored gold answer has the same semantic granularity as the requested output. If the prompt asks for a building type, an optional age adjective cannot be required unless the prompt explicitly requests the complete printed phrase.
 
 ## 3. Source-architecture gate
 
@@ -54,11 +55,14 @@ Do not treat verbosity, famous facts, multiple redundant clues, unbounded counti
 Before promotion, run a shortcut audit:
 
 - Search snippets do not expose the terminal answer or adjacent row.
+- Alternate mirrors, older editions, extracted spreadsheets, and duplicate PDFs do not expose the same answer even when the preferred URL does not.
 - A single obvious query does not collapse the full chain.
 - The terminal operation is not merely sorting, direction-following, or category filtering over a short list.
 - The tempting wrong answer survives earlier constraints and is eliminated only by contextual reading.
 - The final record is poorly indexed but still directly readable and reviewer-verifiable.
 - A competing publication or edition cannot make the answer ambiguous; the prompt's date and title select exactly one record.
+- For visual records, the exact page, row or edge, column header, and neighbouring distractors have been inspected at readable resolution rather than inferred from OCR.
+- Across a batch, the terminal archive and selection mechanism are not repeated so often that the source path becomes predictable.
 
 ## 7. Failure-legitimacy gate
 

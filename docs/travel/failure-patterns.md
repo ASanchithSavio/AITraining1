@@ -26,6 +26,10 @@
 | Snippet-exposed terminal fact | Search snippets or one obvious query reveal the relevant row and its neighbour. | Run a shortcut audit and replace the terminal source with a poorly indexed but readable record. |
 | URLs embedded in the prompt | Direct links remove source discovery and hand the target model the intended lookup sequence. | Keep verification sources in their separate fields; write a self-contained question without URLs. |
 | Wrong-publication near match | Historical sources about the same route can give different instructions, spellings, or values, so an undated clue permits multiple defensible answers. | Name the exact edition or publication needed for uniqueness and verify that a competing source supplies only a distractor. |
+| Single-archive monoculture | Several prompts use different facts from one famous book, so the model learns the same retrieval route and every terminal lookup becomes predictable. | Rotate terminal source families and selection mechanisms; retire the family after a reliably solved batch. |
+| Locator overfitting | Naming the exact year, edition, section, and record abbreviation removes nearly all discovery and scope uncertainty. | State only the constraints needed for uniqueness, then require contextual selection inside the original record. |
+| OCR-obscurity illusion | Old spelling, a scan, or imperfect OCR looks difficult to a human but a browsing model can often find another extracted copy. | Audit alternate hosts and snippets; promote the candidate only when the answer still requires the original visual record. |
+| Gold-granularity mismatch | The stored answer includes an adjective or qualifier even though the prompt asks only for a type, name, or number. | Judge semantic correctness at the granularity requested and word the output instruction to require any indispensable qualifier. |
 
 ## Why earlier successful designs were different
 

@@ -95,3 +95,29 @@ The user manually tested four new Travel candidates with the required extended-r
 ### Current status
 
 Three new Travel candidates passed deterministic preflight and remain untested. Exact prompts, answers, URLs, page references, and audits are kept only in ignored local notes. No target-model query or platform submission was made by the agent.
+
+## 2026-08-03 - archival batch also failed the difficulty gate
+
+### Manual result
+
+The user manually tested all three archival-handbook candidates in the required extended-reasoning target model. Every answer was correct, so the complete batch was retired. One response omitted an adjective but fully satisfied the prompt's request for a building type; evaluation must follow the requested semantic granularity rather than a longer stored phrase.
+
+### Why the apparent obscurity did not help
+
+1. Every terminal fact came from the same famous historical handbook.
+2. Each prompt named the year, edition, and record type, turning the last hop into a targeted lookup.
+3. Historical spelling and imperfect OCR slowed retrieval but did not create a hard selection problem.
+4. The nearby passages were not credible alternatives once the exact record was found.
+5. A batch can therefore fail through source-family repetition even when each individual prompt uses several independent websites.
+
+### Research correction
+
+- Retire an architecture after repeated correct answers instead of making cosmetic clue changes.
+- Audit alternate copies and extracted search snippets, not just the preferred source URL.
+- Prefer image-dominant primary records whose answer depends on a map edge, schedule column, or final table cell.
+- Visually verify every relevant row, column, label, and header before storing a gold answer.
+- Preserve a strong wrong-cell candidate, such as a current distance beside a historical fare, while keeping the requested output unambiguous.
+
+### Current status
+
+A replacement set using three different visual-selection mechanisms has been verified and retained only in ignored local notes. Its prompts, answers, URLs, and page coordinates are not committed. The set remains untested by the target model, and no platform form was submitted.
