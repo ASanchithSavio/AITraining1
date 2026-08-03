@@ -30,3 +30,25 @@ No ChatGPT prompt was tested by the agent and no platform form was submitted. Th
 - The publisher page for the historical paper may require access even when an author-posted full-text copy is readable elsewhere. A failure caused only by access should not be confused with a reasoning failure.
 - The database is old but fixed; a solver may still discover a highly efficient text-export route and answer correctly.
 - The schema clue must be interpreted as a field mapping, not as a request to reconstruct an obsolete database value.
+
+## 2026-08-03 - first user-run target failure
+
+### Outcome
+
+The user tested the verified Science candidate in a fresh extended-thinking target-model session. The model returned a meaningfully wrong integer. A fresh audit of the primary paper, schema crosswalk, and every row in the matching database record confirmed that the stored gold answer was correct. No agent-run model test or platform submission was made.
+
+### First divergence
+
+The wrong integer belongs to a blank duplicate whole-rock row inside the correct database record. The requested row was the unique mineral-separate row selected by the larger of two concentrations printed in the primary paper. This indicates a terminal row-scope error rather than failure to identify the broad study or database record.
+
+### Reusable lessons
+
+- A wrong value drawn from the correct record can be stronger evidence than an unrelated guess: it shows that retrieval succeeded while schema and row selection failed.
+- Carry semantic scope all the way to the terminal row. `Mineral separate` excludes rows explicitly classified as `whole rock`, even when their sample labels look like abbreviations for minerals.
+- Audit all duplicate and blank companion rows before accepting an analysis number from a one-to-many export.
+- Use the primary paper's comparison before reading the identifier field. Reversing those operations encourages selection of a convenient nearby row.
+- A historical-to-current field crosswalk controls the column only; it does not identify the correct row. Column mapping and row selection are separate decisions, and both must be verified.
+
+### Current status
+
+The candidate now has one user-reported wrong target answer and is promoted from research-ready to observed target failure. It still requires the platform's terminal GPT check before it can be treated as a benchmark pass. Exact wording, answer values, record identifiers, URLs, and test details remain in ignored local notes.
