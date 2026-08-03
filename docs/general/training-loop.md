@@ -66,3 +66,9 @@ Promote only a causal lesson:
 - **Result:** what happened on the next authorized test.
 
 Keep exact prompts, transcripts, private links, client language, and screenshots out of the public repository.
+
+## Domain-pivot gate
+
+After each completed batch, compare the result with `domain-pivot.md`. Pause the domain when two consecutive batches are fully solved across at least two terminal-source families and three selection mechanisms. More obscure entities, longer clue chains, and noisier scans do not count as new mechanisms.
+
+When another domain has locally observed failure evidence, prefer that evidence over an untested intuition that the current domain can be made harder. Preserve the retired domain notes so a future return begins only from a genuinely new architecture.

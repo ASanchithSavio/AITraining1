@@ -121,3 +121,27 @@ The user manually tested all three archival-handbook candidates in the required 
 ### Current status
 
 A replacement set using three different visual-selection mechanisms has been verified and retained only in ignored local notes. Its prompts, answers, URLs, and page coordinates are not committed. The set remains untested by the target model, and no platform form was submitted.
+
+## 2026-08-03 - visual-record batch also failed the difficulty gate
+
+### Manual result
+
+The user manually tested the three visual-record candidates in fresh sessions with the required extended-reasoning model. All three verified answers were returned correctly. The batch was retired, and no platform form was submitted.
+
+### Mechanisms disproven as standalone difficulty
+
+1. An image-only timetable column was still read and aligned correctly.
+2. A direct edge and its printed distance were traced correctly through a dense historical route map.
+3. Adjacent distance, duration, and fare cells in a historical directory did not cause a wrong-column selection.
+4. Search-snippet resistance did not imply visual-selection difficulty.
+5. Two independent identification sources did not make the last hop hard when they merely named the endpoints.
+
+### Aggregate Travel evidence
+
+Ten Travel candidates have now been manually tested across indexed pages, directional filtering, a historical handbook, a timetable scan, a route map, and a multi-column directory. All ten were solved. This is evidence against the current Travel strategy rather than evidence that one batch needs cosmetic repair.
+
+### Decision
+
+Travel remains a valid domain, but it is paused. Research should pivot first to historical Politics records, then to Science and Technology reports, because prior local examples already show meaningful failures from identity/sequence handoffs and technical-table scope errors. Music is an exploratory third option with higher version and authority risk.
+
+Travel should be reopened only for a genuinely new mechanism such as a corrigendum, version crosswalk, or controlling footnote. Another destination-to-scan-to-cell prompt is retired by architecture.

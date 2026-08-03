@@ -30,6 +30,10 @@
 | Locator overfitting | Naming the exact year, edition, section, and record abbreviation removes nearly all discovery and scope uncertainty. | State only the constraints needed for uniqueness, then require contextual selection inside the original record. |
 | OCR-obscurity illusion | Old spelling, a scan, or imperfect OCR looks difficult to a human but a browsing model can often find another extracted copy. | Audit alternate hosts and snippets; promote the candidate only when the answer still requires the original visual record. |
 | Gold-granularity mismatch | The stored answer includes an adjective or qualifier even though the prompt asks only for a type, name, or number. | Judge semantic correctness at the granularity requested and word the output instruction to require any indispensable qualifier. |
+| Visual-access assumption | An image-only schedule or scanned table is treated as difficult merely because ordinary text search cannot read it. | Assume the target model can inspect images; require a contextual decision that survives accurate visual extraction. |
+| Human-perceptual trap | Crossing map lines or adjacent numeric cells look confusing to a human but become a bounded vision task once the endpoints and columns are named. | Make a footnote, scope change, version, or competing valid path control the selection instead of relying on visual clutter. |
+| Redundant endpoint clues | Two independent sources identify the places at either end of a final lookup but do not constrain the terminal answer. | Require each upstream source to carry a value or discriminator that changes which terminal record is selected. |
+| Architecture exhaustion | Repeated correct answers across different source families are followed by another cosmetically rarer example of the same lookup. | Pause the domain and pivot; return only with a structurally new mechanism supported by evidence. |
 
 ## Why earlier successful designs were different
 

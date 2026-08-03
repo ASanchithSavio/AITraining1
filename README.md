@@ -14,6 +14,7 @@ Start with the reusable method:
 2. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
 3. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
 4. [`docs/general/training-loop.md`](docs/general/training-loop.md)
+5. [`docs/general/domain-pivot.md`](docs/general/domain-pivot.md)
 
 Then load the active domain pack. For Travel:
 
