@@ -50,6 +50,14 @@ Prefer difficulty caused by retrieval and selection:
 
 Do not treat verbosity, famous facts, multiple redundant clues, unbounded counting, calculation, or volatile information as difficulty.
 
+Before promotion, run a shortcut audit:
+
+- Search snippets do not expose the terminal answer or adjacent row.
+- A single obvious query does not collapse the full chain.
+- The terminal operation is not merely sorting, direction-following, or category filtering over a short list.
+- The tempting wrong answer survives earlier constraints and is eliminated only by contextual reading.
+- The final record is poorly indexed but still directly readable and reviewer-verifiable.
+
 ## 7. Failure-legitimacy gate
 
 A usable model failure has a wrong final answer even though the prompt and gold answer are sound. Reject the candidate if the model is correct, if the difference is only formatting/rounding, or if ambiguity caused the error.

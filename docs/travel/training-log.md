@@ -58,3 +58,26 @@ The next Travel candidate must be mined across at least three genuinely independ
 ### Confidentiality
 
 Exact platform language, account context, candidate prompts, URLs, reviewer-specific material, and private screenshots remain outside version control. Public files contain only generalized methods.
+
+## 2026-08-03 — first manual batch failed the difficulty gate
+
+### Test signal
+
+The user manually tested four new Travel candidates with the required extended-reasoning target model. The model returned every verified answer correctly, each within roughly one to two minutes. The entire batch was retired; no platform submission was made.
+
+### Why the batch was easy
+
+1. The designs began with recognizable destinations and routes, then added source links and ordering constraints forward.
+2. Terminal facts appeared on short, indexed HTML lists or clear tables rather than buried contextual records.
+3. Two prompts reduced to choosing the next entry from a short list; two reduced to sorting or filtering mileposts.
+4. The prompts exposed nearly the complete lookup path, lowering discovery cost.
+5. Nearby names and opposite-direction entries looked like distractors to a human but were trivial once the model read the supplied numbers and categories.
+6. Passing word-count, atomic-answer, domain, and independent-host checks was incorrectly treated as evidence of target-model difficulty.
+
+### Process correction
+
+- Add a shortcut audit before describing any candidate as ready.
+- Reject a candidate if snippets or one obvious query expose the terminal row.
+- Reject simple ordering or category filtering over a short list as the sole failure mechanism.
+- Require a poorly indexed final record whose answer depends on contextual reading inside a precisely scoped subgroup.
+- Keep validity, source architecture, and empirical difficulty as separate promotion decisions.

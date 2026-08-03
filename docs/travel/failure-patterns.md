@@ -16,6 +16,15 @@
 | Model-correct “failure” | A complicated prompt feels hard, but the target model returns the verified answer. | Discard it. Complexity without an incorrect final answer is not a failure. |
 | Wrong gold answer | The selected row/year/entity was never independently verified, so the model appears wrong while it is correct. | Verify primary-source row alignment before testing. |
 
+## Additional patterns confirmed by manual testing
+
+| Pattern | Why it fails | Repair |
+|---|---|---|
+| Compliance-hardness conflation | A prompt passes the word, domain, source-host, and atomic-answer checks, so it is promoted without evidence that the target model will struggle. | Treat validity, architecture, and difficulty as separate gates; passing the first two does not predict the third. |
+| Short-list ordering | The final operation is merely selecting the next higher or lower value, or the adjacent entry, from a small clean list. | Move the terminal answer into a longer contextual record with a scoped subgroup, duplicate, spelling bridge, or row-alignment trap. |
+| Transparent distractor | A nearby name, opposite-direction stop, or category mismatch looks tempting but is eliminated immediately by explicit numbers or labels. | Use a distractor that survives earlier constraints and is ruled out only by careful reading of terminal context. |
+| Snippet-exposed terminal fact | Search snippets or one obvious query reveal the relevant row and its neighbour. | Run a shortcut audit and replace the terminal source with a poorly indexed but readable record. |
+
 ## Why earlier successful designs were different
 
 The useful pattern was answer-first construction:
