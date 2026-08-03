@@ -72,3 +72,20 @@ The repaired version uses separate sentences and repeats the controlling nouns: 
 The revised prompt remains within the word limit and is ready for a fresh attachment check. The earlier wrong target answer is provisional and cannot be credited to the revised wording until the new version is evaluated.
 
 For future candidates, run an explicit antecedent audit after all content edits. If two singular entities appear near `it` or `its`, replace the pronoun even when the intended reading feels obvious. Grammatical validity must be established before model difficulty is counted.
+
+## 2026-08-03 - explicit-noun repair accepted
+
+### Outcome
+
+The user confirmed that the revised wording fixed the immediate problem. This records success of the grammatical repair only. No fresh target-model answer or terminal platform judgment for the revised candidate was reported, so the candidate's empirical difficulty remains unevaluated.
+
+### Why the repair worked
+
+- The revision removed every disputed `it` and `its` attachment.
+- Each sentence names the controlling entity directly: field, mineral separate, formation, or study.
+- The scientific selectors and the gold answer did not change, so the repair improved validity without making the research chain easier.
+- The prompt no longer asks a reader or an automated checker to recover ownership from scientific context.
+
+### Reusable rule
+
+Treat exact-noun repetition as precision, not stylistic redundancy, in benchmark prompts. After drafting, list every pronoun, possessive, relative clause, and trailing modifier. If a phrase could attach to two preceding nouns under ordinary grammar, replace it with the intended noun before any model test.

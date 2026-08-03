@@ -1,0 +1,36 @@
+# Art training log
+
+## 2026-08-03 - artist, provenance, and cross-page pigment table
+
+### Prior evidence used
+
+- The strongest Science result reached the correct database record but selected a nearby row. That mechanism is more diagnostic than merely hiding an obscure fact.
+- The repaired Science wording also showed that exact noun repetition is necessary when several records, studies, and fields appear in one prompt.
+- The Art search therefore targeted a stable catalogue with near-identical neighbouring objects and a layout-dependent terminal lookup.
+
+### Research decisions
+
+1. Used an official museum teaching packet to identify an artist through training and technique, without naming the artist in the prompt.
+2. Used a second museum's provenance record to select one oil-on-panel study from the identified artist's works.
+3. Used a fixed 2003 conservation survey from a third museum to obtain one directly printed pigment name.
+4. Verified the biographical page and both decisive technical-table pages visually.
+5. Confirmed that the pigment table begins with artwork titles and early pigment columns on one page, then continues with later columns on the next page without repeating the artwork titles.
+6. Confirmed that two adjacent studies have titles differing by one word and different entries in the requested pigment column. The neighbouring entry is therefore a plausible, source-grounded wrong answer.
+7. Ran shortcut searches using the provenance names, date, object title, catalogue context, and pigment terminology. Search results did not directly align the selected object with the terminal value.
+8. Rewrote the 119-word candidate without `it` or `its`; every clause explicitly names the artist, target study, provenance, or technical survey.
+
+### Current status
+
+One Art candidate passed the domain, atomicity, stability, source-independence, object-identity, provenance, visual-verification, cross-page alignment, shortcut, and grammatical-attachment gates. The exact prompt, gold answer, URLs, title, object identifier, row positions, and neighbouring wrong answer remain in ignored local notes.
+
+The difficulty hypothesis is not obscurity alone. A solver must identify the artist, use provenance to select the exact study, preserve that study's row position across a page break, and avoid taking the black-pigment value from the almost identically titled adjacent study.
+
+No target-model test or platform submission was performed by the agent. The candidate is ready for one fresh user-run GPT-5.5 extended-thinking test, but it is not claimed to be empirically difficult until the final answer is known.
+
+### Reusable lessons
+
+- Museum technical bulletins can create strong Art tasks when layout, object identity, and conservation vocabulary all matter.
+- A page break is legitimate difficulty only when the row order can be verified unambiguously from the printed table.
+- Near-identical titles create a useful wrong-answer mechanism, but object number and provenance must make the intended work unique.
+- Search snippets that expose row labels and values as separate lists do not establish the answer; alignment must be checked in the source.
+- Do not disclose the target title, catalogue number, table row, page number, or pigment family in a prompt when upstream clues are meant to select them.
