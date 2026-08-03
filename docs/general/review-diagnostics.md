@@ -12,6 +12,9 @@ Use this taxonomy to identify whether a rejection came from prompt validity, evi
 - **Underconstrained:** the answer is obvious, general knowledge, or available from one or two lookups.
 - **Unnecessary constraint:** a clue adds words but eliminates no candidate.
 - **Reference leak:** a source name, distinctive phrase, or unsurfaced answer is embedded in the question.
+- **Terminal-coordinate leak:** the prompt identifies the terminal document and supplies the exact page, row, serial, or column, reducing the final task to transcription.
+- **Post-identification collapse:** the upstream chain looks long, but after the central entity or document is identified only one obvious selection remains.
+- **Type-filter leak:** the requested answer type uniquely reveals which phrase to copy from a small terminal cell without requiring another evidence decision.
 
 ## Answer defects
 
@@ -59,5 +62,7 @@ A prompt can be technically valid yet fail a multi-run automated threshold becau
 4. Add only a constraint that removes a real competing answer.
 5. Prefer a bounded selection or enumeration error over a retrieval dead end.
 6. Re-run deterministic validation before another expensive test.
+
+Measure difficulty after the main record has been identified. A candidate is weak when the remaining work is a one-page correction, one exact coordinate, or one type-filtered transcription. Upstream sources count toward difficulty only when they change the terminal selection or eliminate a live competing answer; sources that merely confirm the record's identity add provenance, not resistance.
 
 The objective is a repeatable, legitimate wrong answer—not a refusal and not a lucky one-off miss.

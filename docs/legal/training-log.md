@@ -16,8 +16,21 @@
 - Rejected a bail-report corrigendum whose most difficult candidate answer appeared to be another typographical error; that would make review harder without creating a better legal-research task.
 - Rejected live statutory interpretation and current-law comparisons because later amendments could change the answer.
 
-### Current status
+### Pre-test status
 
 One 98-word candidate passed the ground-truth, historical-stability, source-handoff, row-and-column, answer-type, originality, and search-shortcut checks. Its exact prompt, answer, URLs, document locations, and distractor audit remain in ignored local notes. The final errata is a sharp one-page official image without a selectable text layer, so that accessibility limitation is explicitly retained as a review risk.
 
 The difficulty hypothesis is a three-way scope error: a solver may retain the authority printed in the original report, take the corrected tribunal from the adjacent errata row, or return the non-officer body printed in the correct replacement cell. The prompt asks for the officer title, leaving one atomic answer. No model test or platform submission was performed by the agent.
+
+### Manual target-model outcome
+
+The user later reported that a fresh target-model session reached the correct gold answer in roughly 40 seconds. The candidate is retired for insufficient difficulty. This is a model success and a prompt-design failure, not a wrong-answer run.
+
+### Causal diagnosis
+
+- **Observed:** the model returned the correct atomic title quickly.
+- **Cause:** once the report was identified, the prompt explicitly directed the solver to a separate one-page errata and supplied the annexure, serial, and column. The final task was therefore a bounded transcription, not a fragile scope decision.
+- **Cause:** the requested entity type selected the only officer title in the replacement cell, neutralizing the nearby body as a distractor.
+- **Cause:** the court and parliamentary sources authenticated the report but did not change which correction cell or version controlled the answer.
+- **Change:** do not reuse this architecture. A future Legal candidate must retain at least two meaningful choices after record identification, avoid exact terminal coordinates in the prompt, and make upstream sources control terminal scope rather than merely identify the report.
+- **Result:** no repaired version was authorized or tested; the exact outcome is preserved in ignored local notes.

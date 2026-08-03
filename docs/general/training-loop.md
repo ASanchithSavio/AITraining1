@@ -5,9 +5,13 @@ This repository is a memory system for prompt research. It does not run model te
 ## Before research
 
 1. Read the current benchmark rules and changelog.
-2. Read `core-method.md`, `domain-strategies.md`, and the active domain pack.
-3. Review retired candidates so failed architectures are not repeated.
-4. Confirm current banned frameworks and source ecosystems privately.
+2. Read the complete general read order in the repository README, not only the file remembered from the previous session.
+3. Read the complete active-domain pack, including its review gates and training log.
+4. Read the ignored local candidate, test, pivot, and audit notes for that domain when they exist.
+5. Review retired candidates so failed architectures are not repeated.
+6. Confirm current banned frameworks and source ecosystems privately.
+
+Do not substitute chat history for this reload. Public notes contain generalized, share-safe lessons; ignored private notes contain the exact prompts, answers, sources, and manual outcomes needed to avoid repeating a tested failure. If the private notes are absent in a fresh checkout, record that context gap before proposing a candidate.
 
 ## Candidate record
 
@@ -66,6 +70,8 @@ Promote only a causal lesson:
 - **Result:** what happened on the next authorized test.
 
 Keep exact prompts, transcripts, private links, client language, and screenshots out of the public repository.
+
+When a model answers correctly and quickly, retire the architecture unless the run was contaminated. Record the time-to-answer as evidence, then identify where the apparent multi-source chain collapsed into a deterministic final lookup. Do not repair such a candidate by adding prose or more upstream identity clues.
 
 ## Domain-pivot gate
 

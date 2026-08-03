@@ -24,6 +24,7 @@ Use these gates in addition to the general method. They are designed for complet
 - Adjacent correction rows and nearby entries in the original table are recorded as distractors.
 - If a corrected cell contains more than one entity type, the wording asks for a type that selects exactly one of them.
 - A merely typographical or apparently erroneous correction is rejected unless the prompt clearly asks for text exactly as printed and the result remains fair.
+- Reject a one-page errata or corrigendum task when the prompt names the correction and gives its exact row and column. Image-only access does not repair this collapse.
 
 ## Source quality
 
@@ -39,3 +40,7 @@ Use these gates in addition to the general method. They are designed for complet
 - The strongest wrong answers come from the original version, an adjacent errata row, or a different entity type in the correct cell.
 - Difficulty depends on record identity, version selection, and exact table scope rather than current-law knowledge.
 - A target-model run counts as a failure only after it returns a meaningfully wrong final answer or explicitly terminates without one.
+- After the controlling record is identified, require at least two meaningful selection or handoff decisions before the answer can be transcribed. Opening a named correction and reading a supplied coordinate is only one lookup.
+- Do not use an answer-type instruction as the only discriminator when a terminal cell contains just one phrase of that type.
+- Each upstream judgment, laying record, docket, or index must affect the terminal version or scope. A chain that only establishes the title of a directly linked report is evidentially sound but may still be easy.
+- Retire a candidate answered correctly in a clean target-model run when the remaining path was deterministic; do not add extra upstream clues or cosmetic obscurity.
