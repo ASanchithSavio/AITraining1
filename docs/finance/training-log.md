@@ -37,3 +37,21 @@ No target-model prompt was tested and no platform form was submitted by the agen
 - A form coordinate can reduce search leakage without becoming arbitrary when an authoritative data dictionary defines the coordinate.
 - Amount columns and account-count columns are separate semantic types even when they sit on the same schedule row.
 - Search the friendly label before finalizing. Third-party ranking pages may expose fields that look obscure inside a regulator API.
+
+## 2026-08-03 - first user-run target failure
+
+### Outcome
+
+The user reported that the required extended-thinking target model returned a wrong integer. A fresh comparison of the target institution, both adjacent quarter-ends, all four relevant schedule columns, and the similarly named institutions confirmed the stored gold answer. No target-model query or platform submission was made by the agent, and the platform-review status was not reported.
+
+### First established divergence
+
+The returned integer is absent from every relevant field on the correct institution's selected-quarter row. It is present in the requested field on more than one confusable legal-entity record. The supported diagnosis is therefore wrong legal entity, not merely wrong quarter or adjacent column. Without the target's reasoning trace, the evidence does not establish which confusable entity was used.
+
+### Reusable lessons
+
+- A shared financial-services brand must never replace a regulator identifier during the terminal lookup.
+- Check whether a wrong answer exists on the correct entity before assigning a row or column failure label.
+- Compare the wrong answer against sibling, predecessor, successor, and historical-name records; a matching value can reveal the first divergence.
+- When several wrong records contain the same value, report only the common proven error class. Do not invent a precise model path from the final answer alone.
+- This mechanism is worth preserving: entity hierarchy, event-bounded period selection, and a separate field-coordinate decision remained necessary after the transaction was identified.
