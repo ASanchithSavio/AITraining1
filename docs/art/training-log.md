@@ -34,3 +34,20 @@ No target-model test or platform submission was performed by the agent. The cand
 - Near-identical titles create a useful wrong-answer mechanism, but object number and provenance must make the intended work unique.
 - Search snippets that expose row labels and values as separate lists do not establish the answer; alignment must be checked in the source.
 - Do not disclose the target title, catalogue number, table row, page number, or pigment family in a prompt when upstream clues are meant to select them.
+
+## 2026-08-03 - user-run target solved the candidate
+
+### Outcome
+
+The user reported that the required extended-thinking target model returned the verified pigment name correctly. The candidate is retired. Research time and the presence of a plausible neighbouring-row answer do not count as a failure when the final answer is correct.
+
+### Why the difficulty mechanism was insufficient
+
+- Once the provenance chain selected the object, the terminal task reduced to preserving one row across a page break.
+- The model kept the row alignment despite the nearly identical adjacent title.
+- Artist identification and provenance increased retrieval cost, but they did not leave enough independent decisions after the technical bulletin was found.
+- The nearby pigment was a credible distractor, yet the source layout made the correct row recoverable without resolving another schema, edition, or record-scope distinction.
+
+### Reusable correction
+
+Do not promote a cross-page table candidate merely because the row labels disappear on the continuation page. Require at least one additional post-identification decision—such as an edition crosswalk, object-status change, revised catalogue field, or independently selected analytical method—that controls the terminal cell. Retire every candidate answered correctly by the target model, regardless of elapsed time.
