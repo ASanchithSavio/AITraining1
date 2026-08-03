@@ -38,6 +38,7 @@ Retire the candidate without testing if any of these is true:
 - the gold answer is not directly proven;
 - fewer than the required independent hosts are necessary;
 - a clue is ambiguous, false, off-domain, or volatile;
+- a pronoun, possessive, relative clause, or modifier has more than one grammatical attachment;
 - the question narrates the browsing path;
 - the answer depends on arithmetic or unbounded counting; or
 - the architecture copies a known exemplar.

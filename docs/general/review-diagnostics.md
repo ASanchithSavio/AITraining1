@@ -5,6 +5,7 @@ Use this taxonomy to identify whether a rejection came from prompt validity, evi
 ## Prompt defects
 
 - **Ambiguous:** more than one entity or interpretation fits.
+- **Ambiguous grammatical attachment:** a pronoun, possessive, relative clause, or trailing modifier can grammatically point to more than one nearby entity, even when subject knowledge suggests the intended reading.
 - **Factual error:** a premise, date, relationship, or scope statement is false.
 - **Not timeless:** the answer changes with the reader's clock or a live source.
 - **Off-domain:** one or more clues or the answer leave the seeded domain.
@@ -15,6 +16,19 @@ Use this taxonomy to identify whether a rejection came from prompt validity, evi
 - **Terminal-coordinate leak:** the prompt identifies the terminal document and supplies the exact page, row, serial, or column, reducing the final task to transcription.
 - **Post-identification collapse:** the upstream chain looks long, but after the central entity or document is identified only one obvious selection remains.
 - **Type-filter leak:** the requested answer type uniquely reveals which phrase to copy from a small terminal cell without requiring another evidence decision.
+
+## Grammatical attachment preflight
+
+Run this check on the final prompt text, not on an earlier draft:
+
+1. Mark every `it`, `its`, `they`, `their`, `this`, `that`, `which`, `former`, `latter`, and possessive phrase.
+2. For each marked word, list every grammatically possible antecedent in the same sentence and the preceding sentence.
+3. If more than one antecedent is possible, repeat the exact noun: `the study`, `the mineral separate`, `the filing`, or `the field`.
+4. Check every phrase after a comma, semicolon, or dash. A nearby noun can capture a modifier that was intended for the sentence's earlier subject.
+5. Check tense and ownership separately. A study can examine a province, but neither a value nor a specimen owns a study merely because the intended research chain makes that relationship guessable.
+6. Recount the words and confirm that the explicit-noun repair did not reveal an answer, terminal identifier, or source path.
+
+Deliberate noun repetition is preferable to elegant pronouns when several entities of the same number appear close together.
 
 ## Answer defects
 

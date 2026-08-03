@@ -51,4 +51,24 @@ The wrong integer belongs to a blank duplicate whole-rock row inside the correct
 
 ### Current status
 
-The candidate now has one user-reported wrong target answer and is promoted from research-ready to observed target failure. It still requires the platform's terminal GPT check before it can be treated as a benchmark pass. Exact wording, answer values, record identifiers, URLs, and test details remain in ignored local notes.
+The candidate initially appeared to have one user-reported target failure. The later grammatical-attachment rejection returned the wording to preflight, so that model result is provisional rather than a valid benchmark failure. Exact wording, answer values, record identifiers, URLs, and test details remain in ignored local notes.
+
+## 2026-08-03 - grammatical attachment rejection and repair
+
+### Observed
+
+The platform's grammatical attachment check rejected the tested Science wording. Three singular pronouns in one clue sentence could each point to more than one nearby entity. The scientific chain and gold answer remained verified, but the prompt did not pass the validity gate.
+
+### Cause
+
+The wording compressed a specimen, a database value, a volcanic province, and a study into one semicolon-linked sentence. Reusing possessive and subject pronouns required the reader to infer the intended owner from scientific context rather than from grammar alone.
+
+### Change
+
+The repaired version uses separate sentences and repeats the controlling nouns: the database field, the mineral separate, and the study. It preserves every selector and does not reveal the formation name, mineral name, record number, concentration values, or terminal field name.
+
+### Result and rule
+
+The revised prompt remains within the word limit and is ready for a fresh attachment check. The earlier wrong target answer is provisional and cannot be credited to the revised wording until the new version is evaluated.
+
+For future candidates, run an explicit antecedent audit after all content edits. If two singular entities appear near `it` or `its`, replace the pronoun even when the intended reading feels obvious. Grammatical validity must be established before model difficulty is counted.
