@@ -1,4 +1,4 @@
-# Business & Finance training log
+# Finance training log
 
 ## 2026-08-03 - acquisition, legal-entity, quarter, and Call Report coordinate
 
@@ -23,7 +23,7 @@
 
 ### Current status
 
-One 95-word Business & Finance candidate passed the domain, atomicity, stability, independent-source, legal-entity, event-date, reporting-period, field-coordinate, unit, directly-printed-answer, shortcut, and grammatical-attachment gates. The exact prompt, answer, URLs, institution identifiers, adjacent-period values, and wrong-entity values remain in ignored local notes.
+One 95-word Finance candidate passed the domain, atomicity, stability, independent-source, legal-entity, event-date, reporting-period, field-coordinate, unit, directly-printed-answer, shortcut, and grammatical-attachment gates. The exact prompt, answer, URLs, institution identifiers, adjacent-period values, and wrong-entity values remain in ignored local notes.
 
 The difficulty hypothesis has three independent failure points after the acquisition is recognized: choose the commercial-bank subsidiary instead of two related institutions, choose the quarter immediately before the legal closing instead of the quarter after it, and choose the managed-asset amount rather than the neighbouring non-managed amount or account counts.
 

@@ -45,7 +45,12 @@ For Art:
 1. [`docs/art/review-gates.md`](docs/art/review-gates.md)
 2. [`docs/art/training-log.md`](docs/art/training-log.md)
 
-For Business & Finance:
+For Business:
+
+1. [`docs/business/review-gates.md`](docs/business/review-gates.md)
+2. [`docs/business/training-log.md`](docs/business/training-log.md)
+
+For Finance:
 
 1. [`docs/finance/review-gates.md`](docs/finance/review-gates.md)
 2. [`docs/finance/training-log.md`](docs/finance/training-log.md)

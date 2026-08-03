@@ -1,4 +1,4 @@
-# Business & Finance prompt review gates
+# Finance prompt review gates
 
 Use these gates with the general method. Exact entities, filing values, record identifiers, URLs, and manual test outcomes remain in ignored local notes.
 

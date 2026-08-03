@@ -1,0 +1,39 @@
+# Business training log
+
+## 2026-08-03 - answer-first archival ownership chart
+
+### Prior evidence used
+
+- The Finance failure showed that a shared corporate name can pull a model onto the wrong legal entity.
+- The retired Art candidate showed that an adjacent-row trap alone may add time without changing the final answer.
+- The strongest Science result combined record selection with a separate terminal-coordinate decision.
+- The Business search therefore required two independent selections before a visually aligned historical chart lookup.
+
+### Research decisions
+
+1. Rejected recent annual reports and ordinary plant tables whose values or product lists appeared in search snippets.
+2. Mined a university collection of historical corporate reports from the answer backward rather than drafting clues first.
+3. Selected a fixed statistical booklet containing a full-page organization chart with multiple subsidiaries, ownership percentages, and incorporation or acquisition dates.
+4. Used an older government enforcement report to identify the chart's parent corporation without naming the parent in the candidate.
+5. Used a later, independent government vessel notice to select one operating subsidiary without revealing the subsidiary in the candidate.
+6. Confirmed that the terminal chart contains two neighbouring same-type companies in the same jurisdiction with different ownership percentages. The sibling percentage is a plausible, source-grounded wrong answer.
+7. Rendered the enforcement page, vessel-notice page, and terminal chart. Visual inspection confirmed the names, the vessel-to-owner pairing, the chart branches, and the percentage alignment.
+8. Ran exact and natural shortcut searches combining the booklet date, subsidiary, parent, chart terminology, and proposed answer. No indexed result joined the intended subsidiary to the terminal percentage.
+9. Rewrote the candidate with explicit nouns. No pronoun can attach to the parent, subsidiary, vessel, notice, or neighbouring company in competing ways.
+
+### Current status
+
+One Business candidate passed the domain, atomicity, stability, three-host independence, source-necessity, corporate-hierarchy, same-type-confuser, visual-alignment, shortcut, and grammatical-attachment gates. The exact prompt, gold answer, URLs, document identifiers, page coordinates, and sibling value remain in ignored local notes.
+
+The difficulty hypothesis has three stages: identify the historical parent from an enforcement description, identify the target subsidiary from a vessel record, and align that subsidiary to the correct percentage in a dense ownership chart. The neighbouring same-type company prevents a broad jurisdiction or industry match from being sufficient.
+
+No target-model prompt was tested and no platform form was submitted by the agent. The candidate is ready for one fresh user-run GPT-5.5 extended-thinking test. It is not claimed to be empirically difficult until that test returns a final answer.
+
+### Reusable lessons
+
+- Old corporate charts are stronger terminal sources than generic annual-report prose when relationship lines and sibling entries control the answer.
+- A later registry or government notice can legitimately select a historical subsidiary when the legal name is unchanged and the notice supplies a unique independent key.
+- The parent-identification source and subsidiary-identification source should contribute different lookup keys; neither should merely repeat the other.
+- OCR from organization charts often scrambles percentages and dates. The rendered chart, not extraction order, determines alignment.
+- A warning to use the target row rather than the neighbouring same-type row can improve fairness without disclosing either value.
+- Keep Business ownership and operations research separate from Finance tasks built around accounting fields, reporting periods, or monetary values.
