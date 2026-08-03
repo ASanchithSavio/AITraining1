@@ -51,6 +51,8 @@ model_and_mode:
 memory_state:
 fresh_chat:
 prompt_pasted_exactly:
+intermediate_statuses:
+elapsed_time_to_terminal_result:
 final_answer:
 failure_label:
 first_divergence:
@@ -71,7 +73,9 @@ Promote only a causal lesson:
 
 Keep exact prompts, transcripts, private links, client language, and screenshots out of the public repository.
 
-When a model answers correctly and quickly, retire the architecture unless the run was contaminated. Record the time-to-answer as evidence, then identify where the apparent multi-source chain collapsed into a deterministic final lookup. Do not repair such a candidate by adding prose or more upstream identity clues.
+Do not classify a run from elapsed time or an intermediate status. Wait for the terminal model or platform result unless the live rules explicitly define a timeout as failure. A long search is retrieval-cost evidence, not proof that the model was stumped.
+
+When a model eventually answers correctly, retire the architecture unless the run was contaminated, regardless of how long it took. Record the elapsed time as secondary evidence, then identify where the apparent multi-source chain collapsed into a deterministic final lookup. Do not repair such a candidate by adding prose or more upstream identity clues.
 
 ## Domain-pivot gate
 

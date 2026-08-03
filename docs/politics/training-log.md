@@ -23,13 +23,15 @@
 
 ### Current status
 
-One 84-word candidate passed ground-truth, chronology, atomicity, source-ecosystem, originality, visual-verification, and shortcut checks. Its exact prompt, answer, source links, file numbers, images, and audit remain in ignored local notes. It has not been tested by the agent and has not been submitted anywhere.
+One 84-word candidate passed ground-truth, chronology, atomicity, source-ecosystem, originality, visual-verification, and shortcut checks. Its exact prompt, answer, source links, file numbers, images, and audit remain in ignored local notes. It was not tested or submitted by the agent.
 
-The difficulty hypothesis is a historical version-selection error: the solver must locate the last organization statement before a state result certification and the first amendment after it, then identify one newly added field value. If the model accurately compares both forms, the candidate must be retired.
+The difficulty hypothesis was a historical version-selection error: the solver had to locate the last organization statement before a state result certification and the first amendment after it, then identify one newly added field value. The later manual result invalidated that hypothesis because the target eventually resolved the version boundary and answered correctly.
 
-### Manual-test signal
+### Manual-test result
 
-The user later reported that a fresh target-model session spent about 25 minutes researching without reaching a final answer. This is a promising retrieval-resistance signal, but it is not yet recorded as a confirmed model failure: a run is classifiable only after the session returns a final answer or explicitly terminates without one. No agent-run model test or platform submission occurred.
+The user first reported that a fresh target-model session had spent about 25 minutes researching without a final answer. The platform's terminal check arrived several minutes later and rejected the task because the target had answered correctly. The candidate is therefore retired as solved, not promoted as a model failure.
+
+This outcome establishes a stronger timing rule: even roughly half an hour of research is not success. Elapsed time can measure retrieval cost, but only the final answer or terminal platform judgment determines whether a prompt stumped the target.
 
 ## 2026-08-03 - additional answer-first mining
 
