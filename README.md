@@ -24,6 +24,11 @@ Then load the active domain pack. For Travel:
 4. [`docs/travel/candidate-architecture.md`](docs/travel/candidate-architecture.md)
 5. [`docs/travel/training-log.md`](docs/travel/training-log.md)
 
+For Politics:
+
+1. [`docs/politics/review-gates.md`](docs/politics/review-gates.md)
+2. [`docs/politics/training-log.md`](docs/politics/training-log.md)
+
 ## Working loop
 
 1. Re-read the current rules and prior failure log.
