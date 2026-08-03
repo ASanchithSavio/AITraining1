@@ -26,3 +26,7 @@
 One 84-word candidate passed ground-truth, chronology, atomicity, source-ecosystem, originality, visual-verification, and shortcut checks. Its exact prompt, answer, source links, file numbers, images, and audit remain in ignored local notes. It has not been tested by the agent and has not been submitted anywhere.
 
 The difficulty hypothesis is a historical version-selection error: the solver must locate the last organization statement before a state result certification and the first amendment after it, then identify one newly added field value. If the model accurately compares both forms, the candidate must be retired.
+
+### Manual-test signal
+
+The user later reported that a fresh target-model session spent about 25 minutes researching without reaching a final answer. This is a promising retrieval-resistance signal, but it is not yet recorded as a confirmed model failure: a run is classifiable only after the session returns a final answer or explicitly terminates without one. No agent-run model test or platform submission occurred.

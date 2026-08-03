@@ -2,4 +2,5 @@
 private/
 evidence/
 screenshots/
+tmp/
 *.local.md

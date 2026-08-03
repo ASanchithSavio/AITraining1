@@ -11,10 +11,11 @@ This repository intentionally excludes client/platform instructions, copied subm
 Start with the reusable method:
 
 1. [`docs/general/core-method.md`](docs/general/core-method.md)
-2. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
-3. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
-4. [`docs/general/training-loop.md`](docs/general/training-loop.md)
-5. [`docs/general/domain-pivot.md`](docs/general/domain-pivot.md)
+2. [`docs/general/golden-trajectory-format.md`](docs/general/golden-trajectory-format.md)
+3. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
+4. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
+5. [`docs/general/training-loop.md`](docs/general/training-loop.md)
+6. [`docs/general/domain-pivot.md`](docs/general/domain-pivot.md)
 
 Then load the active domain pack. For Travel:
 
@@ -28,6 +29,11 @@ For Politics:
 
 1. [`docs/politics/review-gates.md`](docs/politics/review-gates.md)
 2. [`docs/politics/training-log.md`](docs/politics/training-log.md)
+
+For Legal:
+
+1. [`docs/legal/review-gates.md`](docs/legal/review-gates.md)
+2. [`docs/legal/training-log.md`](docs/legal/training-log.md)
 
 ## Working loop
 
