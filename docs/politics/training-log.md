@@ -30,3 +30,14 @@ The difficulty hypothesis is a historical version-selection error: the solver mu
 ### Manual-test signal
 
 The user later reported that a fresh target-model session spent about 25 minutes researching without reaching a final answer. This is a promising retrieval-resistance signal, but it is not yet recorded as a confirmed model failure: a run is classifiable only after the session returns a final answer or explicitly terminates without one. No agent-run model test or platform submission occurred.
+
+## 2026-08-03 - additional answer-first mining
+
+Several Politics branches were rejected before drafting a test candidate:
+
+- A historical convention-ballot sequence failed the shortcut audit because an exact query surfaced the delegation and likely sequence.
+- A modern roll-call delta collapsed after one participant's own official statement exposed the relevant vote change.
+- A historical veto comparison produced a valid set of vote switchers, but the proposed biographical discriminator independently named the intended person. The roll-call comparison therefore became decorative.
+- A preferential-election transfer path was not promoted because the accessible result pages did not preserve the complete intermediate distribution needed for a fair, reproducible terminal selection.
+
+The reusable lesson is that a difficult comparison cannot be rescued by a clue that independently identifies its answer. For a future Politics candidate, the person or record should emerge only from the intersection of independently sourced sets, and at least two meaningful decisions should remain after the central event is known.

@@ -35,6 +35,11 @@ For Legal:
 1. [`docs/legal/review-gates.md`](docs/legal/review-gates.md)
 2. [`docs/legal/training-log.md`](docs/legal/training-log.md)
 
+For Science & Technology:
+
+1. [`docs/science/review-gates.md`](docs/science/review-gates.md)
+2. [`docs/science/training-log.md`](docs/science/training-log.md)
+
 This read order is a required reload, not an optional reference. Before designing a new candidate, read the general method, the complete active-domain pack, and the ignored local records for that domain (when present). Public files preserve reusable lessons; ignored `private/` files preserve exact candidates, gold answers, manual test outcomes, and shortcut audits. Do not rely on chat memory in place of this reload. In a checkout without the private records, note that limitation and use the public files as the minimum safe baseline.
 
 ## Working loop
