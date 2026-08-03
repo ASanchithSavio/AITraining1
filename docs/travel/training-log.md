@@ -81,3 +81,17 @@ The user manually tested four new Travel candidates with the required extended-r
 - Reject simple ordering or category filtering over a short list as the sole failure mechanism.
 - Require a poorly indexed final record whose answer depends on contextual reading inside a precisely scoped subgroup.
 - Keep validity, source architecture, and empirical difficulty as separate promotion decisions.
+
+## 2026-08-03 — archival rebuild after the failed batch
+
+### Research correction
+
+- Removed verification URLs from the prompt body. Sources are supplied separately during verification; embedding them in the question gives the target model a scripted retrieval path.
+- Mined terminal facts in a dated historical travel handbook and visually checked the printed pages rather than trusting OCR or search snippets.
+- Built backward through three independent publication ecosystems: a national or international travel record, a regional tourism source, and the archival terminal source.
+- Added edition and historical-spelling constraints only where they disambiguate the cited record.
+- Searched for shortcut queries and competing historical publications before promotion. A useful trap is a plausible answer from the wrong edition or publication, not a nearby number that simple sorting eliminates.
+
+### Current status
+
+Three new Travel candidates passed deterministic preflight and remain untested. Exact prompts, answers, URLs, page references, and audits are kept only in ignored local notes. No target-model query or platform submission was made by the agent.

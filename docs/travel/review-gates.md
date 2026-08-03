@@ -24,6 +24,7 @@ Run these gates in order. A candidate that fails an early gate should not consum
 - No single obvious query reveals the final answer together with all identifying context.
 - The last source does not become obvious merely because its title, table name, or distinctive phrase was quoted in the question.
 - The private verification path and the submitted source list match one-to-one.
+- Verification URLs stay outside the prompt body unless a task rule explicitly requires them there.
 
 ## 4. Prompt-language gate
 
@@ -57,6 +58,7 @@ Before promotion, run a shortcut audit:
 - The terminal operation is not merely sorting, direction-following, or category filtering over a short list.
 - The tempting wrong answer survives earlier constraints and is eliminated only by contextual reading.
 - The final record is poorly indexed but still directly readable and reviewer-verifiable.
+- A competing publication or edition cannot make the answer ambiguous; the prompt's date and title select exactly one record.
 
 ## 7. Failure-legitimacy gate
 

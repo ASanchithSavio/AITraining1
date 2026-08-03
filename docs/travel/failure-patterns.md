@@ -24,6 +24,8 @@
 | Short-list ordering | The final operation is merely selecting the next higher or lower value, or the adjacent entry, from a small clean list. | Move the terminal answer into a longer contextual record with a scoped subgroup, duplicate, spelling bridge, or row-alignment trap. |
 | Transparent distractor | A nearby name, opposite-direction stop, or category mismatch looks tempting but is eliminated immediately by explicit numbers or labels. | Use a distractor that survives earlier constraints and is ruled out only by careful reading of terminal context. |
 | Snippet-exposed terminal fact | Search snippets or one obvious query reveal the relevant row and its neighbour. | Run a shortcut audit and replace the terminal source with a poorly indexed but readable record. |
+| URLs embedded in the prompt | Direct links remove source discovery and hand the target model the intended lookup sequence. | Keep verification sources in their separate fields; write a self-contained question without URLs. |
+| Wrong-publication near match | Historical sources about the same route can give different instructions, spellings, or values, so an undated clue permits multiple defensible answers. | Name the exact edition or publication needed for uniqueness and verify that a competing source supplies only a distractor. |
 
 ## Why earlier successful designs were different
 
@@ -36,3 +38,5 @@ The useful pattern was answer-first construction:
 5. Keep the requested output atomic.
 
 The failed Travel designs generally began with a popular place and tried to add difficulty afterward. That produces longer prompts, not harder retrieval. Multiple pages from the same official destination site do not repair the architecture.
+
+A stronger Travel design can use publication confusion fairly: the prompt identifies one dated edition, while another searchable historical guide contains a plausible but incorrect near match. The challenge then becomes accurate source selection and contextual reading rather than arithmetic or ambiguity.
