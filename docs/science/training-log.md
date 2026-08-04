@@ -271,3 +271,22 @@ This creates two independent, grounded confusers after mission identification: t
 ### Current status
 
 The candidate passed source-consumption, semantic-comparison, row-selection, column-selection, visual-alignment, accessibility, grammatical-attachment, process-language, and shortcut gates. It has not been tested by the agent or submitted to the platform. Exact wording, values, identifiers, URLs, and the withheld answer remain in ignored local notes.
+
+## 2026-08-04 - first user-run result for the component-to-mode matrix candidate
+
+### Outcome
+
+The user-run extended-thinking target model returned the verified terminal integer after 27 minutes 12 seconds. The candidate is therefore retired as correctly solved. The agent did not run the target model and no platform submission was made.
+
+### Interpretation
+
+The model successfully completed every intended handoff: measurement comparison, component-to-channel mapping, exact mode selection, and row-column intersection in the visual matrix. The neighbouring component and similar mode delayed retrieval but did not cause a scope error.
+
+The elapsed time is useful only as diagnostic context. A correct answer remains a correct target result regardless of whether it took seconds or most of the available window. Adding more identity clues or rephrasing the same matrix lookup would increase surface complexity without creating a new failure mechanism.
+
+### Reusable lessons
+
+- A long multi-source trajectory can still be fully tractable when every handoff is deterministic and the terminal table is internally consistent.
+- Two independently selected matrix axes create legitimate reasoning, but they do not guarantee a wrong answer from a strong long-context model.
+- Retire slow-but-correct candidates instead of treating delay as partial success.
+- Do not cosmetically repair a solved prompt. A replacement must change the controlling mechanism, not merely hide the same channel or mode behind more prose.
