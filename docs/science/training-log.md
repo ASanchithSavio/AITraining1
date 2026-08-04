@@ -118,3 +118,23 @@ The candidate passed source necessity, independent-host, correction provenance, 
 - Same digits in a wrong current field create a particularly credible failure path: a solver can notice the correction but still choose the wrong schema coordinate.
 - Preserve at least two post-discovery decisions: reconcile the historical specimen to the current row, then translate the legacy field label to the current column.
 - Treat the original value, corrected value, and similarly shaped current values as separate provenance claims and verify each before release.
+
+## 2026-08-04 - first user-run result for the correction candidate
+
+### Outcome
+
+The user-run extended-thinking target model returned a decimal different from the verified database value. The agent did not run a target-model test and no platform submission was reported. A fresh source audit confirmed the historical entry, database row, analytical correction comment, and legacy-to-current field mapping.
+
+### Failure classification
+
+The returned decimal does not appear in the selected row or anywhere in the complete fixed analysis export. It is not one of the documented wrong-field or obsolete-value confusers. The supported label is therefore an unsupported corrected-value substitution, not a proven row-selection or column-selection error.
+
+The model may have understood that the published value was obsolete but failed to ground the replacement in the exact current cell. That mechanism remains an inference from the terminal answer, so it should not be presented as known internal reasoning.
+
+### Reusable lessons
+
+- Search the returned value across the entire authoritative export before assigning a failure class.
+- If the value belongs to a real neighbouring row or field, diagnose the precise scope error. If it appears nowhere, record unsupported numeric substitution instead of inventing a provenance story.
+- A correction prompt can expose a distinct weakness: recognizing that an old value is wrong is not the same as retrieving the authoritative replacement.
+- Golden rules should explicitly prohibit averaging, interpolation, unit conversion, and plausible-value reconstruction when the answer is directly printed.
+- Preserve the exact user-run result privately and wait for the terminal platform judgment before calling the candidate a benchmark success.

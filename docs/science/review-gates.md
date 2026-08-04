@@ -24,6 +24,7 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - For a correction-controlled candidate, verify that the historical source prints the superseded value and that the later authoritative record explicitly identifies the published value as erroneous. Do not infer a correction merely because two releases disagree.
 - Keep correction provenance and field mapping independent: the correction must select the controlling version, while the crosswalk must still select the controlling column.
 - Audit same-digit values in other current fields. A decay constant, count, density, age, or concentration that resembles the obsolete value must be documented as a wrong-field confuser, not silently ignored.
+- After a target miss, search the returned value across the selected row and complete authoritative export. Label a row or field error only when the value has a real documented provenance; otherwise use an unsupported-value classification.
 - Check that a report table does not already print the terminal answer; otherwise the database handoff is decorative.
 - Audit every same-sample row, blank duplicate, mineral separate, whole-rock entry, and neighbouring value before claiming uniqueness.
 - If parsing is needed, preserve the direct text or table as the final evidence and use code only to confirm uniqueness.
