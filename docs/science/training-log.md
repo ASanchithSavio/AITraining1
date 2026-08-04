@@ -159,3 +159,24 @@ The USGS release provides the same tables as official Excel workbooks. The repla
 - Distinguish database field values from spreadsheet row numbers. Never describe an identifier as a visible row number.
 - Do not automatically adopt a reviewer's proposed correction when the cited primary source contradicts it. Re-audit first, then remove unnecessary contested details if they do not contribute to the proof.
 - Keep the golden trajectory minimal. Every extra distractor citation creates another factual claim that can fail review without helping establish the answer.
+
+## 2026-08-04 - wall-to-wall source-mapping rejection
+
+### Platform result
+
+A scientifically valid candidate with a verified wrong target answer failed the process-instruction check. Nearly every clue was attributed to a named source in the order the solver was expected to use it. Although the prompt was phrased as a question, it narrated the research route from identity page to historical compilation to terminal database.
+
+### Wording repair
+
+The answer and complete verification package were frozen. The revised prompt states the location, relative position, age, stratigraphy, sample, and correction details as factual clues without naming the intermediate sources. Only the terminal database remains named because the requested value is explicitly a field in that database.
+
+The revision does not add search verbs, URLs, page numbers, source order, sample identifiers, record identifiers, field names, or either competing value. The solver must independently discover the identity source and historical analysis before reconciling the terminal row and schema field.
+
+### Reusable lessons
+
+- A multi-source prompt should require source discovery, not label every clue with its source.
+- Repeated constructions such as `the page states`, `the report identifies`, and `the database records` can turn a question into a disguised lookup script.
+- Name a source only when the source itself is part of the requested coordinate, such as a value in a specified fixed database.
+- Convert intermediate source attributions into standalone factual clues while preserving every uniqueness constraint.
+- When a process check fails but the evidence graph remains sound, freeze the answer and golden package. Repair only the prompt wording.
+- Re-run grammar and source-necessity audits after removing attribution; source hiding must not create ambiguous pronouns or decorative sources.

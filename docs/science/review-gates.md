@@ -48,6 +48,14 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Reject candidates whose answer appears in snippets, alternate table extractions, or an obvious exact query.
 - Record publisher-access or author-copy dependencies as retrieval risks before testing.
 
+## Prompt language and process
+
+- State intermediate evidence as factual clues rather than assigning each clue to a named page, paper, report, and database.
+- Reject wall-to-wall attribution patterns such as `the page states`, `the paper identifies`, followed by `the database records`; this narrates the lookup chain even when no imperative verbs appear.
+- Name the terminal source only when its identity is part of the requested coordinate. Let the solver discover intermediate sources.
+- After removing source names, confirm that all clues still select one entity and that every pronoun, modifier, and relationship has one grammatical attachment.
+- A process-instruction repair must not change the answer, evidence graph, golden trajectory, rules, or sources unless the underlying facts also failed review.
+
 ## Promotion gate
 
 Promote a Science candidate only when all of these are true:
