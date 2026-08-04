@@ -227,4 +227,17 @@ The corrected identifier is then carried into a historical visual format matrix.
 
 ### Current status
 
-The candidate passed provenance, nomenclature, visual-alignment, adjacent-confuser, direct-answer, accessibility, grammatical-attachment, process-language, and shortcut gates. No agent-run target-model test or platform submission occurred. Exact wording, identifiers, coordinates, URLs, and test status remain in ignored local notes.
+The candidate passed provenance, nomenclature, visual-alignment, adjacent-confuser, direct-answer, accessibility, grammatical-attachment, process-language, and shortcut gates. In one manual user-run evaluation, the extended-thinking target spent roughly three-quarters of an hour and returned the wrong coordinate. No agent-run target-model test or platform submission occurred. Exact wording, identifiers, coordinates, URLs, and test status remain in ignored local notes.
+
+### Result interpretation
+
+The wrong answer does not match either relevant adjacent cell. It therefore supports the broad classification `identifier-to-coordinate failure`, but the terminal answer alone cannot show whether the model carried the heading's identifier, lost the detailed identifier, changed table blocks, or misread the row and column. The submission explanation should state only what the evidence proves.
+
+Elapsed time is not part of correctness. The long attempt is useful context, but the candidate is promising because the final answer is wrong and the gold is directly verified. Terminal platform review is still required before calling it a benchmark success.
+
+### Additional reusable lessons
+
+- Do not infer a detailed internal failure path from a bare final coordinate. Use the narrowest diagnosis supported by the returned answer.
+- If the wrong answer is absent from both the controlling and confusable cells, describe a mapping failure rather than inventing a specific wrong-row story.
+- Disclose typographical defects in a decisive historical table. Verify the page sequence and neighbouring section heading so the defect cannot be mistaken for an evaluator error.
+- Keep elapsed time out of the pass/fail rule. A slow correct response still passes the target check; a slow wrong response fails it.

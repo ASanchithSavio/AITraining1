@@ -69,3 +69,5 @@ Promote a Science candidate only when all of these are true:
 - the prompt does not narrate a complete lookup script;
 - the exact-search audit does not expose the answer; and
 - no agent-run target-model test or platform submission has occurred unless the user explicitly requests it.
+
+After a user-run evaluation, record elapsed time only as context. Promotion depends on the correctness of the final response and the platform gates, not on how long the target spent researching.
