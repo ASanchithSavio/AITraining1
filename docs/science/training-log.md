@@ -198,3 +198,33 @@ Both text files were replaced by official workbooks from the same agency release
 - Preserve the source ecosystem and evidence by switching formats within the same official release rather than changing the scientific chain.
 - Reconfirm that each specified filter sequence leaves exactly one row before replacing the submitted sources.
 - Keep raw text exports locally for audit if useful, but omit them from the trajectory and verification-source list.
+
+## 2026-08-04 - heading-versus-detail identifier reconciliation
+
+### Research decision
+
+A new answer-first design begins with an internal nomenclature conflict in a fixed engineering report. A summary heading attaches one measurement identifier to an anomaly, while the detailed discussion assigns a different identifier to the described channel. An independent telemetry dictionary establishes that the heading's identifier belongs to a related tank measurement and that the detailed identifier belongs to the actual interface measurement.
+
+The corrected identifier is then carried into a historical visual format matrix. The wrong and right identifiers occupy adjacent cells in the same subformat column, creating a grounded confuser: a solver that trusts the heading can reach the correct terminal table and still return the neighbouring coordinate.
+
+### Verification performed
+
+- Rendered both report passages and confirmed that the pressure offsets and mission timestamp describe the same anomaly.
+- Rendered the independent telemetry dictionary and verified the distinct channel titles for both identifiers.
+- Rendered the terminal matrix and checked the identifier, subformat column, and word/bit row visually.
+- Audited the surrounding terminal pages so that a continuation-caption defect could not change the selected cell.
+- Ran combined exact searches using both identifiers, the anomaly timestamp, the terminal format name, and likely coordinate vocabulary. No terminal coordinate was exposed.
+- Confirmed that the terminal source is a fixed human-readable PDF table and requires neither a machine endpoint nor a large-file text search.
+
+### Reusable lessons
+
+- An internal source inconsistency can create valid difficulty only when the prompt explicitly states which passage controls and an independent source resolves the nomenclature.
+- Do not silently correct a historical heading. Preserve both printed identifiers in the audit and prove why one is a bounded confuser.
+- Adjacent cells are useful only when the row choice follows from a substantive semantic distinction, such as tank pressure versus interface pressure.
+- Reconcile the identifier before opening the terminal matrix; visual row-column reading cannot repair a wrong entity carried into the table.
+- Audit continuation captions and surrounding pages whenever a terminal table crosses page boundaries. A caption defect must be documented and shown not to affect the answer.
+- Keep the prompt factual and compact. The solver should discover the report and dictionary rather than receive a source-by-source itinerary.
+
+### Current status
+
+The candidate passed provenance, nomenclature, visual-alignment, adjacent-confuser, direct-answer, accessibility, grammatical-attachment, process-language, and shortcut gates. No agent-run target-model test or platform submission occurred. Exact wording, identifiers, coordinates, URLs, and test status remain in ignored local notes.

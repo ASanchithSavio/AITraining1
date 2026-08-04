@@ -28,6 +28,8 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Check that a report table does not already print the terminal answer; otherwise the database handoff is decorative.
 - Audit every same-sample row, blank duplicate, mineral separate, whole-rock entry, and neighbouring value before claiming uniqueness.
 - If parsing is needed, preserve the direct text or table as the final evidence and use code only to confirm uniqueness.
+- When a report heading and detailed discussion assign different identifiers to the same described anomaly, do not choose silently. State which passage controls, verify both identifier meanings in an independent dictionary, and preserve the rejected identifier as a documented confuser.
+- If a multi-page table has a conflicting continuation caption, inspect the preceding and following pages and prove that the row family and identifier prefix still place the target in the intended table section.
 
 ## Difficulty after identification
 
