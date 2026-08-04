@@ -22,10 +22,13 @@ candidate_id:
 status: research | preflight_failed | ready_for_user_test | retired
 seeded_domain:
 prompt_version:
+prompt_frozen: yes | no
 gold_answer:
+gold_frozen: yes | no
 terminal_source_and_location:
 source_graph:
 independent_hostnames:
+submitted_source_formats:
 known_distractors:
 validity_risks:
 difficulty_hypothesis:
@@ -77,6 +80,17 @@ Keep exact prompts, transcripts, private links, client language, and screenshots
 Do not classify a run from elapsed time or an intermediate status. Wait for the terminal model or platform result unless the live rules explicitly define a timeout as failure. A long search is retrieval-cost evidence, not proof that the model was stumped.
 
 When a model eventually answers correctly, retire the architecture unless the run was contaminated, regardless of how long it took. Record the elapsed time as secondary evidence, then identify where the apparent multi-source chain collapsed into a deterministic final lookup. Do not repair such a candidate by adding prose or more upstream identity clues.
+
+## Delivery and change control
+
+Run `delivery-checklist.md` before returning any prompt, answer check, failure reason, golden trajectory, golden rules, or verification-source list.
+
+- Freeze the exact prompt after a manual test. A wording edit creates a new prompt version even when the evidence graph is unchanged.
+- Freeze a reverified gold answer independently from the prompt. A trajectory or source-format repair can leave both frozen components unchanged.
+- Record exact entities, answers, URLs, and reviewer wording only in ignored local notes.
+- Keep public updates causal and reusable: what failed, why it failed, what changed, and what the next preflight must check.
+- When testing remains user-run, do not query the target model while researching, verifying, logging, or formatting the package.
+- Before submission, classify every cited URL by actual content and remove all JSON and YAML sources from the submitted path.
 
 ## Domain-pivot gate
 

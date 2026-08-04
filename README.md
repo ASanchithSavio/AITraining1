@@ -12,10 +12,11 @@ Start with the reusable method:
 
 1. [`docs/general/core-method.md`](docs/general/core-method.md)
 2. [`docs/general/golden-trajectory-format.md`](docs/general/golden-trajectory-format.md)
-3. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
-4. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
-5. [`docs/general/training-loop.md`](docs/general/training-loop.md)
-6. [`docs/general/domain-pivot.md`](docs/general/domain-pivot.md)
+3. [`docs/general/delivery-checklist.md`](docs/general/delivery-checklist.md)
+4. [`docs/general/domain-strategies.md`](docs/general/domain-strategies.md)
+5. [`docs/general/review-diagnostics.md`](docs/general/review-diagnostics.md)
+6. [`docs/general/training-loop.md`](docs/general/training-loop.md)
+7. [`docs/general/domain-pivot.md`](docs/general/domain-pivot.md)
 
 Then load the active domain pack. For Travel:
 
@@ -55,7 +56,7 @@ For Finance:
 1. [`docs/finance/review-gates.md`](docs/finance/review-gates.md)
 2. [`docs/finance/training-log.md`](docs/finance/training-log.md)
 
-This read order is a required reload, not an optional reference. Before designing a new candidate, read the general method, the complete active-domain pack, and the ignored local records for that domain (when present). Public files preserve reusable lessons; ignored `private/` files preserve exact candidates, gold answers, manual test outcomes, and shortcut audits. Do not rely on chat memory in place of this reload. In a checkout without the private records, note that limitation and use the public files as the minimum safe baseline.
+This read order is a required reload, not an optional reference. Use it before designing a candidate and again before delivering a prompt, answer confirmation, failure reason, golden trajectory, golden rules, or verification sources. Read the general method, the complete active-domain pack, and the ignored local records for that domain (when present). Public files preserve reusable lessons; ignored `private/` files preserve exact candidates, gold answers, manual test outcomes, reviewer feedback, source repairs, and shortcut audits. Do not rely on chat memory in place of this reload. In a checkout without the private records, note that limitation and use the public files as the minimum safe baseline.
 
 ## Working loop
 
@@ -68,3 +69,4 @@ This read order is a required reload, not an optional reference. Before designin
 7. Test only with the required target model.
 8. Record the exact outcome locally, including why the model or the prompt failed.
 9. Promote only generalized, non-confidential lessons into this repository.
+10. Before sending any golden package, run the delivery checklist and freeze any prompt or answer the user asked to keep unchanged.
