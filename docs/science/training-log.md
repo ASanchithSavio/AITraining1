@@ -241,3 +241,33 @@ Elapsed time is not part of correctness. The long attempt is useful context, but
 - If the wrong answer is absent from both the controlling and confusable cells, describe a mapping failure rather than inventing a specific wrong-row story.
 - Disclose typographical defects in a decisive historical table. Verify the page sequence and neighbouring section heading so the defect cannot be mistaken for an evaluator error.
 - Keep elapsed time out of the pass/fail rule. A slow correct response still passes the target check; a slow wrong response fails it.
+
+## 2026-08-04 - component-to-channel-to-mode matrix design
+
+### Research decision
+
+A new answer-first design begins with a fixed mission narrative that reports two related component measurements at one timestamp. A semantic comparison selects one component without naming its engineering channel. A separate parameter table maps the selected component to a channel, a mode summary selects the applicable commutator column, and a visual appendix matrix supplies the terminal word.
+
+This creates two independent, grounded confusers after mission identification: the other component occupies an adjacent channel row, while another mode has similar mission language but does not match the exact primary-use description.
+
+### Verification performed
+
+- Verified the mission identity on a human-readable institutional page.
+- Checked the timestamp, both component measurements, and the later physical state in a page-addressable historical report.
+- Rendered the parameter dictionary, mode summary, and terminal matrix from the engineering report.
+- Confirmed the cooler component, channel row, mode column, and terminal intersection visually.
+- Searched combined parameter, channel, mode, and word phrases; the searches located the report but did not expose the final cell.
+- Confirmed that the evidence path uses HTML, PDF, and a page image rather than JSON, YAML, or a flat text export.
+
+### Reusable lessons
+
+- A comparison clue is valuable when it chooses between two real measurements before either engineering identifier is disclosed.
+- Visual matrices become substantive only when separate evidence selects both axes. A supplied channel plus a supplied mode would leave a weak transcription task.
+- Similar wording across mode descriptions can be a fair confuser when the prompt quotes one exact functional combination and the report clearly assigns that combination to one mode.
+- In the golden trajectory, give exact printed and physical pages for a large PDF. Do not tell the reviewer to search the whole file or use Ctrl+F.
+- Keep the prompt free of source names and step verbs. State the historical facts and the requested coordinate, then let the solver discover the reports.
+- Preserve the neighbouring component and similar mode privately as audited confusers; do not overload the prompt with warnings about them.
+
+### Current status
+
+The candidate passed source-consumption, semantic-comparison, row-selection, column-selection, visual-alignment, accessibility, grammatical-attachment, process-language, and shortcut gates. It has not been tested by the agent or submitted to the platform. Exact wording, values, identifiers, URLs, and the withheld answer remain in ignored local notes.

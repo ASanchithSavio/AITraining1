@@ -38,6 +38,8 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - A single sample number followed by one exact row is weak even when the database is large.
 - A field-code clue is useful only when resolving it changes the selected column; unexplained jargon is not difficulty.
 - Reject a corrected-value prompt if finding the correction leaves only one obvious field. Require a separate specimen, version, or schema decision after the relevant record is discovered.
+- For a telemetry or format matrix, require independent evidence to select both axes. A prompt that directly supplies the channel and mode leaves only visual transcription.
+- When two adjacent parameter rows are confusable, make the row choice depend on a verified semantic distinction such as component role, measurement state, or a comparison at one historical event.
 
 ## Accessibility and shortcut audit
 
@@ -46,6 +48,7 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Name the filter column, operator, and filter value for every large-table reduction, and confirm that the final filter leaves one row.
 - Keep database identifiers, worksheet row numbers, and line numbers separate in both wording and verification notes.
 - Visually inspect decisive PDF tables or figures when layout controls row or column alignment.
+- For a decisive table inside a long PDF, record the physical page, printed page, table title, row selector, and column selector in the golden trajectory. Never make whole-document search the terminal method.
 - Search the specimen description, field code, terminal value, and likely post-identification query combinations.
 - Reject candidates whose answer appears in snippets, alternate table extractions, or an obvious exact query.
 - Record publisher-access or author-copy dependencies as retrieval risks before testing.
