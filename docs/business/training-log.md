@@ -37,3 +37,21 @@ No target-model prompt was tested and no platform form was submitted by the agen
 - OCR from organization charts often scrambles percentages and dates. The rendered chart, not extraction order, determines alignment.
 - A warning to use the target row rather than the neighbouring same-type row can improve fairness without disclosing either value.
 - Keep Business ownership and operations research separate from Finance tasks built around accounting fields, reporting periods, or monetary values.
+
+## 2026-08-04 - first user-run target failure
+
+### Outcome
+
+The user reported a wrong percentage from the required extended-thinking target model. Rechecking the three source handoffs and the rendered organization chart confirmed the stored gold answer. The returned percentage is printed on the correct chart, but it belongs to the target subsidiary's immediate parent rather than to the subsidiary selected by the independent vessel record.
+
+### First established divergence
+
+The target reached the correct corporate branch but stopped one level too high in the hierarchy. This is a parent-versus-subsidiary scope error, not an arithmetic, date, publication-version, or unrelated-entity error. Without a reasoning trace, the evidence does not show whether the connector line was misread, the parent's percentage was incorrectly inherited, or the final subsidiary-selection clue was dropped.
+
+### Reusable lessons
+
+- Compare every returned chart value against the target box, immediate parent, sibling boxes, and nearby dates before assigning a failure label.
+- A wrong value printed beside the immediate parent is strong evidence of hierarchy-scope failure.
+- An independent selector for a child company remains useful only if the terminal lookup carries that exact legal name all the way to the child box.
+- Dense organization charts can create a legitimate failure mechanism when parent and child percentages are both plausible and visually close.
+- Diagnose only the first error proved by the final answer. Do not invent an exact internal search path without the model's trace.
