@@ -31,6 +31,17 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - Visually inspect relationship lines, indentation, braces, legends, percentages, and dates. OCR order is not proof of chart alignment.
 - Record the neighbouring entry and its value before testing; a useful wrong answer must belong to a real confusable entry.
 
+## Historical operating maps and facility notes
+
+- A fire-insurance map is Business evidence when the terminal fact concerns a company's plant operations, protection systems, power, storage, production space, or equipment.
+- Select the exact property before opening the map. A shared corporate name is not enough when numbered mills, plants, warehouses, or successors coexist.
+- Use a dated construction event to choose an edition only after verifying the local edition sequence. Do not assume that maps were issued annually.
+- Require the map's index to contribute the printed sheet number. If the prompt itself supplies the sheet, an important navigation decision has been removed.
+- Prefer a dense operating note with same-system confusers, such as a tank capacity, reservoir capacity, pump rate, pressure, and hydrant count. The requested component and measure must still be unambiguous.
+- Reject the candidate if an upstream nomination, survey, or history repeats the requested terminal value. A repeated wrong-component value may be retained only when the prompt clearly asks for a different component.
+- Visually inspect the index, the full sheet, and a readable crop of the decisive note. OCR ordering and automated transcription are not proof for handwritten or tightly typeset map annotations.
+- Cite a human-viewable collection record and exact image sequence or printed sheet. Do not substitute a manifest, JSON response, or IIIF metadata object for the final visual evidence.
+
 ## Version, scope, and shortcut checks
 
 - Fix the exact month and year of the booklet, not merely the company name. Historical ownership is not current ownership.

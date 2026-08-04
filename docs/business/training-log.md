@@ -125,3 +125,38 @@ The external legal and geographic joins identified the report publisher, target 
 - Do not mistake a long source chain for terminal difficulty; audit the decisions remaining after the last document opens.
 - When a prompt is answered correctly, retire the mechanism if the weakness is structural. Adding more upstream clues or indirect wording does not restore a missing terminal decision.
 - A future organizational-scope design should make independent evidence select the subsection without spelling out its label in the question.
+
+## 2026-08-04 - answer-first fire-insurance protection note
+
+### Why this mechanism was selected
+
+Several answer-first candidates were rejected before drafting. Historical-statistics errata exposed corrected values in indexed snippets. A corrected patent title became a direct certificate transcription after the patent was identified. A historical drug-table route lacked a stable, human-readable edition path. Each route failed either the shortcut gate or the post-document decision gate.
+
+The retained Business mechanism begins with a visually buried operating fact in a historical fire-insurance map. A university archival record identifies a founder, a state preservation record selects the correct company property and construction event, and a federal map collection supplies the edition chronology, special index, and terminal sheet. The upstream records do not print the answer.
+
+### Construction and verification decisions
+
+1. Chose an industrial property with several similarly named plants so entity selection remains meaningful after the company is known.
+2. Used a dated addition to select the first map edition after a real physical change instead of printing the map year in the prompt.
+3. Required the volume's special index to locate the property sheet. The map is not reached through an exact answer-bearing search result.
+4. Selected a terminal fire-protection note containing several figures about one water system: a normal supply tank, an emergency reservoir, and a pump rate. These are semantic confusers, not arbitrary neighbouring numbers.
+5. Verified that the requested figure appears only on the map sheet and is not repeated in the preservation nomination. An upstream record does mention one wrong-component figure, which creates a plausible documented error without leaking the answer.
+6. Rendered and visually inspected the decisive nomination pages, map index, full property sheet, and an original-resolution crop of the note. OCR was used only as a discovery aid and not as alignment proof.
+7. Ran exact and natural searches joining the company, property, sprinkler language, equipment type, and candidate value. No result exposed the intended entity-value pair.
+8. Rewrote the question with explicit nouns and only one generic reference to the terminal source type. It does not narrate a source-by-source itinerary.
+
+### Current status
+
+One candidate passed the Business-domain, answer-first, source-necessity, edition-selection, index-navigation, same-system-confuser, visual-verification, shortcut, source-format, process-instruction, and grammatical-attachment gates. Exact names, prompt, answer, URLs, sheet coordinate, and distractor values remain in ignored local notes.
+
+The agent did not test the target model and did not submit a platform form. The candidate is ready for one fresh user-run extended-thinking test and is not claimed to have failed the model until a terminal response is reported.
+
+### Reusable lessons
+
+- Fire-insurance maps can provide strong Business terminal evidence when the requested fact concerns manufacturing operations rather than geography alone.
+- Prefer several figures in one operational system over a random adjacent-row trap. Tank capacity, reservoir capacity, and pump flow are close in topic but have different equipment roles.
+- A dated building addition can select a map edition naturally, provided the edition sequence is independently verifiable.
+- Make the map index a consumed decision: the historical record identifies the property, while the index supplies the printed sheet.
+- Check every upstream narrative for the final value. If the answer is repeated before the terminal source, the map step is decorative and the candidate should be rejected.
+- For image-based evidence, record both the sequence image and printed sheet, then verify the exact wording at original resolution.
+- Mentioning one terminal source type is not a wall-to-wall source map. Naming every intermediate archive, publication, and lookup step in the prompt is.
