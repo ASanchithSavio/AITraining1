@@ -21,6 +21,9 @@ Use these gates with the general method. Exact candidates, answers, record ident
 
 - Verify the terminal record in the distributed data, not only in a landing-page description or search snippet.
 - When a schema changed, prove the old-to-new field mapping from the authoritative crosswalk and identify which exported column actually carries the answer.
+- For a correction-controlled candidate, verify that the historical source prints the superseded value and that the later authoritative record explicitly identifies the published value as erroneous. Do not infer a correction merely because two releases disagree.
+- Keep correction provenance and field mapping independent: the correction must select the controlling version, while the crosswalk must still select the controlling column.
+- Audit same-digit values in other current fields. A decay constant, count, density, age, or concentration that resembles the obsolete value must be documented as a wrong-field confuser, not silently ignored.
 - Check that a report table does not already print the terminal answer; otherwise the database handoff is decorative.
 - Audit every same-sample row, blank duplicate, mineral separate, whole-rock entry, and neighbouring value before claiming uniqueness.
 - If parsing is needed, preserve the direct text or table as the final evidence and use code only to confirm uniqueness.
@@ -31,6 +34,7 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Strong mechanisms include specimen reconciliation, old/new schema mapping, mineral-versus-whole-rock selection, corrected-versus-original values, and version-scoped appendix lookup.
 - A single sample number followed by one exact row is weak even when the database is large.
 - A field-code clue is useful only when resolving it changes the selected column; unexplained jargon is not difficulty.
+- Reject a corrected-value prompt if finding the correction leaves only one obvious field. Require a separate specimen, version, or schema decision after the relevant record is discovered.
 
 ## Accessibility and shortcut audit
 

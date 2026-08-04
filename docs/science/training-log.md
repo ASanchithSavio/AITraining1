@@ -89,3 +89,32 @@ The user confirmed that the revised wording fixed the immediate problem. This re
 ### Reusable rule
 
 Treat exact-noun repetition as precision, not stylistic redundancy, in benchmark prompts. After drafting, list every pronoun, possessive, relative clause, and trailing modifier. If a phrase could attach to two preceding nouns under ordinary grammar, replace it with the intended noun before any model test.
+
+## 2026-08-04 - correction-controlled fission-track candidate
+
+### Research decision
+
+After a Business directory design collapsed to one row lookup, research returned to a fixed scientific database with a materially different terminal mechanism. The new answer-first design begins with a historical analysis whose published density is explicitly marked erroneous by the later database. The corrected row also contains a different field beginning with the same digits as the obsolete value, creating a grounded same-record confuser rather than arbitrary nearby noise.
+
+The source graph uses three independent ecosystems. A public scientific-interpretation page identifies the physical feature, a historical compilation identifies the specimen and prints the superseded value, and a federal database plus its authoritative appendix supply the correction and old-to-current field mapping. Each source changes the selection state.
+
+### Verification performed
+
+- Matched the historical specimen description, mineral, locality, laboratory identifier, and citation to one location record and one analysis row.
+- Proved from the appendix that the requested legacy label maps to the corrected density field, not the decay constant, track count, adjacent density, age, or concentration fields.
+- Rendered the historical analytical entry and schema table at original resolution to verify row and column alignment.
+- Confirmed that the answer is directly printed in a human-readable static export and requires no conversion or calculation.
+- Ran exact and combined shortcut searches across the feature description, laboratory identifier, correction wording, legacy label, current field, and candidate value. The corrected entity-field pair was not exposed, while the obsolete published value remained an accessible temptation.
+- Repeated explicit nouns and removed ambiguous singular pronouns. The prompt withholds the feature name, specimen identifier, record number, both competing values, and current field name.
+
+### Current status
+
+The candidate passed source necessity, independent-host, correction provenance, schema mapping, row uniqueness, direct-answer, visual alignment, accessibility, grammatical attachment, and shortcut gates. No agent-run target-model test or platform submission occurred. Exact wording, values, identifiers, URLs, locators, and confusers remain in ignored local notes for one fresh user-run evaluation.
+
+### Reusable lessons
+
+- A historical correction is strong only when the old source actually prints the wrong value and the later authoritative record explicitly marks it as erroneous.
+- Pair correction control with field control. Finding the corrected record should not by itself reveal which of several related fields answers the question.
+- Same digits in a wrong current field create a particularly credible failure path: a solver can notice the correction but still choose the wrong schema coordinate.
+- Preserve at least two post-discovery decisions: reconcile the historical specimen to the current row, then translate the legacy field label to the current column.
+- Treat the original value, corrected value, and similarly shaped current values as separate provenance claims and verify each before release.

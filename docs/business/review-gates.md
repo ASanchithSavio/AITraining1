@@ -37,6 +37,8 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - State whether the requested value comes from a chart, table, note, or prose when the same publication reports rounded and unrounded variants.
 - Search combinations of the issuer, target entry, document date, terminal label, and proposed answer. Reject any candidate whose intended entity-value pair is exposed by a snippet.
 - Run a post-document collapse audit: after the report is found, the solver should still need to select both the correct organizational section and the correct row inside that section.
+- Reject a candidate when the prompt explicitly names the correct subsection or supplies an exclusion that resolves the only section-level ambiguity. A duplicate row label is weak if one instruction leaves a single obvious transcription.
+- Require the organizational scope to be carried from independent evidence into the terminal document. Do not let a warning sentence perform that join for the solver.
 - Reject a directory candidate when an exact chain name plus an exact place name exposes the value in a search snippet or OCR preview.
 - Confirm that each source is directly accessible and that a solver can reach the archival document without a private database or login.
 - Classify every submitted source by its actual content, not only by the URL suffix. An extensionless archive asset is acceptable only after the catalogue metadata, downloaded file, and rendered page establish that it is a human-readable PDF.

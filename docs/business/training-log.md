@@ -107,3 +107,21 @@ The locator audit also added the physical PDF page beside the printed page for e
 - Count the catalogue and original asset as one publication ecosystem, not two independent sources.
 - State both physical and printed page numbers whenever pagination differs.
 - Run the no-JSON/no-YAML check across the whole submitted path, including intermediate sources.
+
+## 2026-08-04 - directory candidate answered correctly and retired
+
+### Outcome
+
+The user-run extended-thinking target model returned the verified terminal answer. No agent-run model test or platform submission occurred. The candidate is retired rather than rewritten.
+
+### Why the architecture failed
+
+The external legal and geographic joins identified the report publisher, target division, and target place without much resistance. The terminal report did contain the same place label under two organizational headings, but the prompt explicitly named the correct separately headed section and warned against the preceding list. That wording performed the only important scope decision for the solver. After document discovery, the task reduced to transcribing one clearly labelled row.
+
+### Reusable lessons
+
+- A real duplicate row is not automatically a strong confuser. The solver must still have to determine which heading governs the requested entity.
+- Reject a directory prompt when an exclusion sentence names the correct subsection so precisely that only one row remains.
+- Do not mistake a long source chain for terminal difficulty; audit the decisions remaining after the last document opens.
+- When a prompt is answered correctly, retire the mechanism if the weakness is structural. Adding more upstream clues or indirect wording does not restore a missing terminal decision.
+- A future organizational-scope design should make independent evidence select the subsection without spelling out its label in the question.
