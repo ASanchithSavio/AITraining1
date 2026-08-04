@@ -55,6 +55,15 @@ Keep these sections separate and in this order:
 2. `Golden rules`
 3. `Verification sources`
 
+If the user also asks why the tested response failed, deliver four separate sections in this order:
+
+1. `Response failure reason`
+2. `Golden trajectory`
+3. `Golden rules`
+4. `Verification sources`
+
+A correct answer correction or a compact diagnosis does not satisfy a request for the complete package. Before sending, compare the response headings with every component the user requested and confirm that none was omitted.
+
 For the trajectory:
 
 - use `Search`, `Fetch`, `Verify`, and `Filter` only when those actions are real;
@@ -89,5 +98,7 @@ For the verification-source list:
 4. Update the active-domain private record with exact details.
 5. Promote only generalized, non-confidential lessons to the public domain pack.
 6. Commit and push only the public-safe files requested by the user.
+
+Treat a missing requested section as a delivery failure even when the underlying research and diagnosis are correct. Log and repair that presentation layer separately; do not redesign the prompt or change a verified answer merely because the package was incomplete.
 
 Elapsed research time and intermediate status are not terminal outcomes. A correct final answer retires the tested architecture; a wrong answer counts only after the prompt and gold answer survive re-verification.

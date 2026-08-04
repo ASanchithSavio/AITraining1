@@ -26,3 +26,9 @@ The candidate is ready for one fresh user-run target-model test. The agent did n
 - A prototype title should identify the released game without becoming the entire difficulty mechanism.
 - Search for modern repair logs before promotion; community repair pages often collapse an otherwise strong historical schematic prompt.
 - Two visual decisions within one schematic package can be substantive, but source independence must come from the upstream archive and maintenance record rather than from counting sheets as separate sources.
+
+## 2026-08-04 - final wording freeze for the hardware candidate
+
+The active wording was expanded into the target length band and now distinguishes the released vector game, the frame-advance control, the display-damage warning, the octal-buffer boundary, and the main processor. The buffer input, buffer output, and sound processor remain explicit exclusions because each is a real same-trace confuser. The prompt still withholds the switch number, board coordinate, data-line label, processor type, schematic sheets, and terminal pin.
+
+The exact v2 wording passed a fresh process-instruction and grammatical-attachment audit. This is a wording freeze, not an empirical result; the user still performs the first target-model test.

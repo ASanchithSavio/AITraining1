@@ -46,6 +46,8 @@ Retire the candidate without testing if any of these is true:
 - the answer depends on arithmetic or unbounded counting; or
 - the architecture copies a known exemplar.
 
+Batch size never lowers these gates. When several prompts are requested, give every candidate its own answer-first verification, visual terminal check, source-consumption audit, shortcut audit, grammatical-attachment audit, and exact-wording freeze. Replace a weak candidate instead of retaining it to fill the requested count.
+
 ## User-run test record
 
 For every fresh run, record:
@@ -76,6 +78,8 @@ Promote only a causal lesson:
 - **Result:** what happened on the next authorized test.
 
 Keep exact prompts, transcripts, private links, client language, and screenshots out of the public repository.
+
+Record discarded branches as well as promoted candidates. A search snippet that exposes the terminal pair, an obvious one-row transcription, or a result page that prints the answer is useful training evidence even though the candidate is never tested.
 
 Do not classify a run from elapsed time or an intermediate status. Wait for the terminal model or platform result unless the live rules explicitly define a timeout as failure. A long search is retrieval-cost evidence, not proof that the model was stumped.
 

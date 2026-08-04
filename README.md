@@ -66,6 +66,21 @@ For Video Games:
 1. [`docs/video-games/review-gates.md`](docs/video-games/review-gates.md)
 2. [`docs/video-games/training-log.md`](docs/video-games/training-log.md)
 
+For Shopping:
+
+1. [`docs/shopping/review-gates.md`](docs/shopping/review-gates.md)
+2. [`docs/shopping/training-log.md`](docs/shopping/training-log.md)
+
+For Geography:
+
+1. [`docs/geography/review-gates.md`](docs/geography/review-gates.md)
+2. [`docs/geography/training-log.md`](docs/geography/training-log.md)
+
+For TV Shows:
+
+1. [`docs/tv-shows/review-gates.md`](docs/tv-shows/review-gates.md)
+2. [`docs/tv-shows/training-log.md`](docs/tv-shows/training-log.md)
+
 This read order is a required reload, not an optional reference. Use it before designing a candidate and again before delivering a prompt, answer confirmation, failure reason, golden trajectory, golden rules, or verification sources. Read the general method, the complete active-domain pack, and the ignored local records for that domain (when present). Public files preserve reusable lessons; ignored `private/` files preserve exact candidates, gold answers, manual test outcomes, reviewer feedback, source repairs, and shortcut audits. Do not rely on chat memory in place of this reload. In a checkout without the private records, note that limitation and use the public files as the minimum safe baseline.
 
 ## Working loop

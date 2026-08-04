@@ -61,3 +61,12 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - Repeat `booklet publisher`, `target company`, `chart`, and `percentage` when a pronoun could attach to more than one entity.
 - Keep source clues in one natural question; do not turn the prompt into a browsing checklist.
 - Passing preflight makes a candidate ready for one user-run target-model test. A correct final answer retires the candidate regardless of elapsed time.
+
+## Common-carrier annual returns
+
+- Distinguish the target carrier from affiliates under the same parent with independently sourced route or operating-scope evidence.
+- Select the reporting year from a fixed historical event; do not ask for a current owner or infer a year from an unbounded date range.
+- In operating-statistics schedules, record the row label, column label, unit, subtotal, and adjacent service values before drafting.
+- Prefer same-table confusers that preserve the carrier and unit but change service category or total scope.
+- Reject the candidate if the prompt supplies the carrier name, report year, schedule number, row, and column so completely that only transcription remains.
+- Visually verify dense annual-return tables. Do not rely on OCR column order for blank cells, multi-level headings, or totals.

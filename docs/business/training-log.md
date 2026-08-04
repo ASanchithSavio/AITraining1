@@ -178,3 +178,22 @@ The target successfully preserved all of the intended distinctions: original pla
 - Image-only evidence and grounded confusers improve quality but do not guarantee failure against extended reasoning.
 - Retire a correctly answered architecture instead of adding more upstream identity clues. Extra founder, property, or edition clues would increase length without changing the terminal mechanism.
 - For the next Business candidate, change the evidence operation itself: consider a controlling amendment, cross-document nomenclature conflict, or version-dependent coordinate rather than another map-note transcription.
+
+## 2026-08-04 - railroad annual-return candidate
+
+### Research decision
+
+After the fire-insurance-map mechanism was solved correctly, the replacement Business design moved to a historical common-carrier annual return. Independent corporate and operating-history sources distinguish two short lines under one parent and select the reporting year through a fixed ownership event. The terminal return then requires both a service-row choice and a freight-versus-passenger column choice.
+
+### Verification performed
+
+- Verified the target route and the sibling railroad from independent historical sources.
+- Fixed the report year from the parent-company transaction rather than exposing the year as an instruction.
+- Rendered the annual-return schedule and checked the service-row and column alignment visually.
+- Recorded the road-service figure and total as same-table confusers.
+- Confirmed that natural searches did not expose the carrier-year-field-value join.
+- Confirmed a human-readable HTML/PDF evidence path with no calculation, JSON, YAML, or flat-file search.
+
+### Status and lesson
+
+The candidate is ready for one user-run target-model test. Exact entities, values, URLs, and wording remain in ignored local notes. A railroad route is useful only when it distinguishes a carrier from a real sibling; the ownership event is useful only when it selects the report year; and the terminal schedule remains substantive only when both row and column scope must be preserved.

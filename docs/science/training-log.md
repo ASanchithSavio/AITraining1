@@ -345,3 +345,20 @@ The continuation page carrying the answer has an erroneous repeated subsection c
 - Disclose the caption defect in the trajectory and golden rules, while keeping it out of the prompt unless it is needed for uniqueness.
 - Do not claim that the caption caused the error without a reasoning trace showing that page-selection decision.
 - A strong candidate can let the model solve the difficult semantic reconciliation and still expose a separate visual-coordinate weakness.
+
+## 2026-08-04 - complete-package delivery correction
+
+### Observed
+
+After the telemetry-matrix miss was verified, a user-facing response supplied the corrected coordinate and a compact failure diagnosis. The user had asked for the established full format, so the response was incomplete even though the diagnosis itself was supported.
+
+### Change
+
+The exact local record now preserves a submission-ready failure reason, stepwise golden trajectory with direct URLs and exact pages, concise golden rules, and a one-to-one verification-source list. The general delivery checklist now requires a four-section response whenever a failure reason and golden package are requested together.
+
+### Reusable lessons
+
+- Separate research correctness from delivery completeness.
+- Do not assume that a request for rules and a failure reason authorizes omission of the trajectory or verification sources when the conversation has established the full-package format.
+- Check requested headings before sending, just as carefully as the terminal row and column.
+- Repair an incomplete package without changing a frozen prompt or verified answer.
