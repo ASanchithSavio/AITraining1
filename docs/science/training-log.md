@@ -322,3 +322,26 @@ The prompt makes the printed identifier controlling rather than silently repairi
 ### Current status
 
 The candidate passed source-consumption, contemporaneous-semantics, independent-dictionary, grounded-confuser, visual-alignment, grammatical-attachment, process-language, human-readable-source, and shortcut gates. It has not been tested by the agent or submitted to the platform. Exact wording, identifiers, values, coordinates, URLs, and the withheld answer remain only in ignored local notes for one fresh user-run evaluation.
+
+## 2026-08-04 - first user-run result for the noun-label/identifier candidate
+
+### Outcome
+
+The user-run extended-thinking target correctly reconciled the anomaly line's misleading component noun with its printed measurement identifier. It explicitly distinguished that identifier from the separate identifier assigned to the noun-labelled component. It then returned the wrong subformat-and-row coordinate after 7 minutes 47 seconds.
+
+A fresh visual audit confirmed that the returned coordinate is a real cell but contains an unrelated measurement. The controlling identifier appears in a different column on the following continuation page. The verified gold therefore remains unchanged. The agent did not run the target model, and no platform submission was reported.
+
+### First established divergence
+
+The response itself proves that the upstream identity and nomenclature steps succeeded: it names the controlling identifier and explains the rejected identifier correctly. The earliest demonstrated error is therefore the final visual matrix lookup, not mission identification or parameter semantics.
+
+The continuation page carrying the answer has an erroneous repeated subsection caption. That defect is a plausible reason a solver might remain on the preceding page, but the response does not reveal enough of its page-selection process to establish that cause. The submission diagnosis should say only that the correct identifier was mapped to a cell that visibly contains another code.
+
+### Reusable lessons
+
+- A complete response can localize the first divergence more precisely than a bare wrong answer. Preserve the parts it got right before naming the failure class.
+- Verify the returned coordinate itself, not only the gold cell. A real but unrelated cell proves a terminal matrix-placement error.
+- When a multi-page table has a bad continuation caption, inspect page sequence and identifier families before deciding that a later block belongs to another subsystem.
+- Disclose the caption defect in the trajectory and golden rules, while keeping it out of the prompt unless it is needed for uniqueness.
+- Do not claim that the caption caused the error without a reasoning trace showing that page-selection decision.
+- A strong candidate can let the model solve the difficult semantic reconciliation and still expose a separate visual-coordinate weakness.
