@@ -55,3 +55,21 @@ The target reached the correct corporate branch but stopped one level too high i
 - An independent selector for a child company remains useful only if the terminal lookup carries that exact legal name all the way to the child box.
 - Dense organization charts can create a legitimate failure mechanism when parent and child percentages are both plausible and visually close.
 - Diagnose only the first error proved by the final answer. Do not invent an exact internal search path without the model's trace.
+
+## 2026-08-04 - source-format and locator preflight
+
+### Audit outcome
+
+The candidate's complete evidence path was rechecked after an earlier Finance submission had been returned for machine-readable sources. The Business path contains three human-readable PDFs and one HTML catalogue record. It contains no JSON or YAML. The three decisive PDF pages were rendered and visually inspected again.
+
+One archive's original-asset URL has no filename extension. The URL shape alone is not the file format: the catalogue identifies the download as a PDF, the downloaded asset validates as a multi-page PDF, and the cited terminal page renders correctly. The catalogue page and original asset remain one source ecosystem even though both URLs are useful in the trajectory.
+
+The locator audit also added the physical PDF page beside the printed page for each long government publication. This makes the proof reproducible in a browser PDF viewer without changing the prompt, answer, or reasoning chain.
+
+### Reusable lessons
+
+- Classify a source from its actual response and rendered content, not from whether its URL ends in `.pdf`.
+- When an archive serves an extensionless original asset, cite the human-readable catalogue record as format metadata and cite the original PDF as the evidence document.
+- Count the catalogue and original asset as one publication ecosystem, not two independent sources.
+- State both physical and printed page numbers whenever pagination differs.
+- Run the no-JSON/no-YAML check across the whole submitted path, including intermediate sources.

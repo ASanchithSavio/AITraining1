@@ -36,6 +36,9 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - State whether the requested value comes from a chart, table, note, or prose when the same publication reports rounded and unrounded variants.
 - Search combinations of the issuer, target entry, document date, terminal label, and proposed answer. Reject any candidate whose intended entity-value pair is exposed by a snippet.
 - Confirm that each source is directly accessible and that a solver can reach the archival document without a private database or login.
+- Classify every submitted source by its actual content, not only by the URL suffix. An extensionless archive asset is acceptable only after the catalogue metadata, downloaded file, and rendered page establish that it is a human-readable PDF.
+- Do not cite JSON or YAML in the submitted trajectory or verification-source list. Keep machine-readable endpoints, if used for discovery, out of the final evidence path.
+- For long PDFs, record both the physical PDF page and the printed page whenever they differ.
 
 ## Language and empirical gates
 
