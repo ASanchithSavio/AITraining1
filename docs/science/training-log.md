@@ -290,3 +290,35 @@ The elapsed time is useful only as diagnostic context. A correct answer remains 
 - Two independently selected matrix axes create legitimate reasoning, but they do not guarantee a wrong answer from a strong long-context model.
 - Retire slow-but-correct candidates instead of treating delay as partial success.
 - Do not cosmetically repair a solved prompt. A replacement must change the controlling mechanism, not merely hide the same channel or mode behind more prose.
+
+## 2026-08-04 - noun-label versus measurement-identifier reconciliation
+
+### Research decision
+
+After retiring a slow-but-correct component-to-matrix candidate, the next answer-first design changes the controlling mechanism. A historical anomaly list prints a measurement identifier beside the wrong component noun. A detailed discussion in the same mission record describes the physical location correctly, and an independent instrumentation list proves that the printed identifier and the identifier for the noun-labelled component are distinct.
+
+The prompt makes the printed identifier controlling rather than silently repairing the historical line. Both identifiers are then carried into a fixed visual network-format matrix, where they occupy different cells. This creates a grounded alternate answer from a real nomenclature error instead of relying on an arbitrary nearby number.
+
+### Verification performed
+
+- Verified the mission identity on a separate institutional chronology.
+- Rendered the anomaly line, its continuation, and the detailed subsystem discussion from the original mission scan.
+- Confirmed from a separate instrumentation table that the printed identifier and the identifier implied by the erroneous noun label denote different physical pressure locations.
+- Rendered the terminal matrix and visually checked both the controlling cell and the confusable cell.
+- Audited the pages before and after the terminal page to document a continuation-caption defect without relying on that caption.
+- Ran exact and natural shortcut searches for the identifiers, format name, timestamp, and candidate coordinates. No literal terminal coordinate was exposed.
+- Confirmed that the complete verification path uses page-addressable human-readable PDFs and requires no machine endpoint, flat-file search, calculation, or OCR reconstruction.
+
+### Reusable lessons
+
+- A noun-label/identifier conflict is fair only when contemporaneous technical prose and an independent dictionary both establish the identifier's meaning.
+- Do not assume that a later telemetry dictionary preserves an older vehicle's nomenclature. First verify the same physical interpretation inside the target mission record.
+- State which printed artifact controls. Otherwise a historical typo creates ambiguity rather than useful difficulty.
+- Preserve the wrong noun-implied identifier as a bounded confuser and verify that it leads to a different real terminal cell.
+- Repeat exact nouns in the prompt. Phrases such as `the anomaly line's printed measurement number` are safer than `its code` when a report, signal, component, and line are all in scope.
+- A terminal table can remain useful even when search indexes its OCR, provided the literal answer is absent and both axes still require evidence-based selection and visual alignment.
+- When a table continuation caption is defective, inspect the preceding and following blocks and disclose the defect in the trajectory. Never use the bad caption as evidence.
+
+### Current status
+
+The candidate passed source-consumption, contemporaneous-semantics, independent-dictionary, grounded-confuser, visual-alignment, grammatical-attachment, process-language, human-readable-source, and shortcut gates. It has not been tested by the agent or submitted to the platform. Exact wording, identifiers, values, coordinates, URLs, and the withheld answer remain only in ignored local notes for one fresh user-run evaluation.
