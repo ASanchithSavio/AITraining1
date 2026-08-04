@@ -138,3 +138,24 @@ The model may have understood that the published value was obsolete but failed t
 - A correction prompt can expose a distinct weakness: recognizing that an old value is wrong is not the same as retrieving the authoritative replacement.
 - Golden rules should explicitly prohibit averaging, interpolation, unit conversion, and plausible-value reconstruction when the answer is directly printed.
 - Preserve the exact user-run result privately and wait for the terminal platform judgment before calling the candidate a benchmark success.
+
+## 2026-08-04 - reviewer return for large-file navigation
+
+### Review outcome
+
+A submitted Science trajectory was returned even though the reviewer agreed that its final answer held. The reviewer challenged two nonterminal distractor descriptions and, more importantly, rejected instructions that told a solver to search multi-megabyte text exports. The terminal answer cannot depend on Ctrl+F through a massive flat file.
+
+### Evidence audit and repair
+
+The official export was downloaded again before editing. That audit did not support the reviewer's proposed replacement identifiers. Because the disputed distractors were not needed to prove the answer, the repair does not argue over them or substitute unverified numbers; it removes them from the submitted trajectory.
+
+The USGS release provides the same tables as official Excel workbooks. The replacement path uses header filters in the location workbook to isolate one record, then filters the analysis workbook by that record key and the scientifically selected mineral. The final filter leaves one row, from which the mapped identifier is read directly. The prompt, gold answer, primary-paper logic, and schema mapping do not change.
+
+### Reusable lessons
+
+- A source can be authoritative yet operationally unsuitable. Multi-megabyte text exports need a navigable official alternative for reviewer reproduction.
+- Do not use Ctrl+F as the terminal-answer method in a large flat file. Prefer an official spreadsheet or database interface with named-column filters.
+- State every filter field, operator, and value. `Filter the record-key column to X, then the mineral column to Y` is reproducible; `search the file` is not.
+- Distinguish database field values from spreadsheet row numbers. Never describe an identifier as a visible row number.
+- Do not automatically adopt a reviewer's proposed correction when the cited primary source contradicts it. Re-audit first, then remove unnecessary contested details if they do not contribute to the proof.
+- Keep the golden trajectory minimal. Every extra distractor citation creates another factual claim that can fail review without helping establish the answer.

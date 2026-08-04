@@ -40,6 +40,9 @@ Use these gates with the general method. Exact candidates, answers, record ident
 ## Accessibility and shortcut audit
 
 - The primary study, terminal export, and field crosswalk must be readable without proprietary software.
+- For a large terminal table, provide an official navigable format and an exact filter sequence. Reject instructions that rely on Ctrl+F or an unspecified search through a multi-megabyte flat file.
+- Name the filter column, operator, and filter value for every large-table reduction, and confirm that the final filter leaves one row.
+- Keep database identifiers, worksheet row numbers, and line numbers separate in both wording and verification notes.
 - Visually inspect decisive PDF tables or figures when layout controls row or column alignment.
 - Search the specimen description, field code, terminal value, and likely post-identification query combinations.
 - Reject candidates whose answer appears in snippets, alternate table extractions, or an obvious exact query.
