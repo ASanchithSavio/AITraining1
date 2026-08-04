@@ -109,3 +109,26 @@ No target-model prompt was tested and no platform form was submitted by the agen
 - A statutory reporting category can create a meaningful semantic fork when the filing separately reports an amount and a count.
 - State role labels are safer than repeated pronouns when a transaction involves several similarly named bank subsidiaries.
 - The public facsimile's direct HTML URL is a reviewer-friendly terminal source because it renders the completed PDF while preserving institution and date parameters.
+
+## 2026-08-04 - conversation-limit failure and evidence-safe diagnosis
+
+### Outcome
+
+The user manually ran the candidate in the required extended-thinking target. After more than ninety minutes, the session reached its conversation-length limit without a finalized response. One integer had been surfaced before the limit, but a fresh check of the official completed filing showed that integer was not the verified gold.
+
+This is recorded as a failure to complete before the session limit. It is not recorded as a finalized wrong-answer run, and elapsed time alone is not the reason for the classification. No target-model query or platform submission was made by the agent.
+
+### Diagnosis boundary
+
+The official filing still proves the stored gold and separates the requested count from the adjacent dollar amount and other nearby counts. The incomplete run, however, does not provide enough reasoning evidence to locate the first internal divergence. A wrong institution, reporting period, or semantic field would all be possible stories, but none is established by the surfaced integer alone.
+
+The golden package therefore explains only what the evidence supports: the target did not finish, its visible candidate is absent from the correct terminal cell, and the exact internal cause is unknown.
+
+### Reusable lessons
+
+- A long runtime is retrieval-cost evidence, not automatically a failure. A session-ending limit with no finalized response is a separate observable outcome.
+- Keep `visible candidate`, `final answer`, and `platform result` as distinct fields in the test record.
+- Reverify the gold after an incomplete run; do not assume that a stalled model makes the stored answer correct.
+- Without a completed reasoning trace or a source-matched wrong value, stop the diagnosis at the first fact that can be proved.
+- State uncertainty narrowly. Honest causal limits make a golden package stronger than a confident but invented wrong-path explanation.
+- Preserve human-readable HTML/PDF evidence with exact page locations even when the model never reaches a terminal response.
