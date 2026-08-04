@@ -61,6 +61,11 @@ For Health & Medicine:
 1. [`docs/health/review-gates.md`](docs/health/review-gates.md)
 2. [`docs/health/training-log.md`](docs/health/training-log.md)
 
+For Video Games:
+
+1. [`docs/video-games/review-gates.md`](docs/video-games/review-gates.md)
+2. [`docs/video-games/training-log.md`](docs/video-games/training-log.md)
+
 This read order is a required reload, not an optional reference. Use it before designing a candidate and again before delivering a prompt, answer confirmation, failure reason, golden trajectory, golden rules, or verification sources. Read the general method, the complete active-domain pack, and the ignored local records for that domain (when present). Public files preserve reusable lessons; ignored `private/` files preserve exact candidates, gold answers, manual test outcomes, reviewer feedback, source repairs, and shortcut audits. Do not rely on chat memory in place of this reload. In a checkout without the private records, note that limitation and use the public files as the minimum safe baseline.
 
 ## Working loop
