@@ -42,5 +42,8 @@ Use these gates with the general method. Exact drug names, application numbers, 
 ## Promotion gate
 
 - A candidate that passes these checks is ready for one fresh user-run target-model test; it is not yet an empirical model failure.
+- Before promotion, perform a post-identification collapse check: assume the product and protocol identifier are already known, then count the substantive decisions still required in the terminal record.
+- Reject a candidate when an indexed protocol identifier plus wording that names the arm, row, statistic, and endpoint leaves only direct transcription.
+- Do not count source quantity, binary sibling selection, adjacent numeric values, or absence from search snippets as substitutes for terminal scope difficulty.
 - A correct final answer retires the tested architecture regardless of elapsed time.
 - A wrong answer counts only after the historical source chain, protocol mapping, table column, statistic, and gold value are reverified.

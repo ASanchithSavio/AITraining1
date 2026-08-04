@@ -56,6 +56,40 @@ The target reached the correct corporate branch but stopped one level too high i
 - Dense organization charts can create a legitimate failure mechanism when parent and child percentages are both plausible and visually close.
 - Diagnose only the first error proved by the final answer. Do not invent an exact internal search path without the model's trace.
 
+## 2026-08-04 - division-versus-main-list replacement architecture
+
+### Why a new architecture was required
+
+Another domain's multi-source candidate was answered correctly because its last identifier led to an indexed document and the prompt named the remaining table coordinate. That result reinforced a stricter Business rule: finding the terminal report must not reduce the task to one search-and-copy action.
+
+Several historical corporate reports were screened and rejected. Ordinary financial tables, production summaries, and restated annual figures either became direct row lookups or exposed the entity-value pair in search snippets.
+
+### Construction decisions
+
+1. Selected a historical retail annual report whose store directory repeats the same geographic labels under two different organizational scopes.
+2. Confirmed that the target borough has one count in the corporation's main network and a different count in a separately headed division. Both values are genuine same-field answers rather than unrelated nearby numbers.
+3. Used one historical opinion to identify the annual-report publisher and a different opinion to identify the target division.
+4. Used an independent library catalogue record to select the geographic row without naming the borough directly in the candidate.
+5. Required the terminal lookup to preserve both organizational scope and geographic scope after the annual report is found.
+6. Rendered the report's business-description page and both store-list pages. Visual inspection confirmed the division relationship, headings, hierarchy, duplicate borough label, and two different counts.
+7. Ran shortcut searches joining the two historical marks, publisher, division, report year, geographic clue, and candidate value. No indexed result exposed the terminal division-borough pair.
+8. Repeated explicit nouns in the prompt so the publisher, chain, borough, report, division section, and preceding list each have one grammatical role.
+
+### Current status
+
+One replacement Business candidate passed the domain, answer-first, source-necessity, post-document-decision, same-field-confuser, visual-verification, shortcut, source-format, and grammatical-attachment gates. Exact names, marks, answer, URLs, page coordinates, and distractor values remain in ignored local notes.
+
+The agent did not query the target model and did not submit a platform form. The candidate is ready for one fresh user-run extended-thinking test. A correct terminal answer will retire it regardless of elapsed time.
+
+### Reusable lessons
+
+- Duplicate labels become useful only when they sit under different, independently selected organizational headings.
+- A division-versus-main-network error is stronger than an arbitrary adjacent-row trap because the wrong value preserves the requested field and geography while losing entity scope.
+- Use separate clues for publisher, sub-entity, and row. If one clue reveals two of those coordinates, the terminal lookup may collapse.
+- After finding the terminal document, require at least two remaining decisions: which organizational section and which row within that section.
+- Record totals at every hierarchy level before testing; a returned city, state, division, or corporate total can then be diagnosed precisely.
+- A prompt may warn against the wrong organizational section without printing either value or turning the question into a browsing checklist.
+
 ## 2026-08-04 - source-format and locator preflight
 
 ### Audit outcome

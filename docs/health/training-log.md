@@ -22,15 +22,13 @@
 9. Ran shortcut searches using the protocol identifier, laboratory row, range endpoint, product class, and trial nickname. No search snippet exposed the complete intended entity-value pair.
 10. Rewrote the prompt with explicit nouns for the selected trial, evidence table, protocol identifier, regulatory review, and application drug.
 
-### Current status
+### Manual result and disposition
 
-One Health & Medicine candidate passed the historical-stability, non-advice, atomicity, four-ecosystem source, trial-selection, protocol-mapping, treatment-arm, range-endpoint, visual-verification, source-format, shortcut, and grammatical-attachment gates.
+The user-run target model returned the verified gold answer. The candidate is retired as a prompt-design failure. The agent did not query the target model and did not submit a platform form.
 
-The exact prompt, gold answer, drug, application number, trial names, protocol code, URLs, page coordinate, and confuser values remain in ignored local notes. The agent did not query the target model and did not submit a platform form. The candidate is ready for one fresh user-run test.
+The failure was a post-identification collapse. A dated regulatory action exposed one application, a binary result selected one of two sibling trials, and a public crosswalk supplied the terminal review's exact protocol identifier. Once that identifier was carried into the indexed review, the prompt itself named the treatment arm, row, statistic, and endpoint. The last step was transcription rather than a durable scope problem.
 
-### Remaining empirical risk
-
-Once the protocol identifier is known, the target may locate and align the regulatory table correctly. The source chain is valid, but only the terminal target result can establish whether the combined sibling-trial, treatment-arm, and range-endpoint decisions are difficult enough.
+The exact prompt, answer, identifiers, URLs, page coordinate, and user-run response remain in ignored local notes.
 
 ### Reusable lessons
 
@@ -39,3 +37,6 @@ Once the protocol identifier is known, the target may locate and align the regul
 - A dense regulatory table can support several fair confusers when study, treatment arm, statistic, and range endpoint must all remain in scope.
 - Historical withdrawal notices are useful identity anchors, but they contribute difficulty only when later sources still require independent trial and table decisions.
 - Keep historical record lookup separate from present-day treatment guidance.
+- Four necessary sources do not make a hard prompt when each source reduces the task to a single deterministic join.
+- A terminal table with many adjacent numbers is weak when the prompt names every coordinate and the preceding source gives the table's exact searchable identifier.
+- Reject `identity anchor -> binary selector -> explicit crosswalk -> named cell` designs before testing, even when the route is long and every confuser is source-grounded.

@@ -27,6 +27,7 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 
 - Distinguish parent, controlled company, subsidiary, division, plant, and successor. A shared brand or place name is not an identity bridge.
 - Prefer a same-type confuser: two subsidiaries, facilities, products, or percentages printed close together in the same dated record.
+- A repeated category can be a strong confuser when the same label appears under a main network and a separately headed division. Verify that the two values differ and that an independent source selects the division.
 - Visually inspect relationship lines, indentation, braces, legends, percentages, and dates. OCR order is not proof of chart alignment.
 - Record the neighbouring entry and its value before testing; a useful wrong answer must belong to a real confusable entry.
 
@@ -35,6 +36,8 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - Fix the exact month and year of the booklet, not merely the company name. Historical ownership is not current ownership.
 - State whether the requested value comes from a chart, table, note, or prose when the same publication reports rounded and unrounded variants.
 - Search combinations of the issuer, target entry, document date, terminal label, and proposed answer. Reject any candidate whose intended entity-value pair is exposed by a snippet.
+- Run a post-document collapse audit: after the report is found, the solver should still need to select both the correct organizational section and the correct row inside that section.
+- Reject a directory candidate when an exact chain name plus an exact place name exposes the value in a search snippet or OCR preview.
 - Confirm that each source is directly accessible and that a solver can reach the archival document without a private database or login.
 - Classify every submitted source by its actual content, not only by the URL suffix. An extensionless archive asset is acceptable only after the catalogue metadata, downloaded file, and rendered page establish that it is a human-readable PDF.
 - Do not cite JSON or YAML in the submitted trajectory or verification-source list. Keep machine-readable endpoints, if used for discovery, out of the final evidence path.
