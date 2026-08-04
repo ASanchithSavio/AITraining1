@@ -180,3 +180,21 @@ The revision does not add search verbs, URLs, page numbers, source order, sample
 - Convert intermediate source attributions into standalone factual clues while preserving every uniqueness constraint.
 - When a process check fails but the evidence graph remains sound, freeze the answer and golden package. Repair only the prompt wording.
 - Re-run grammar and source-necessity audits after removing attribution; source hiding must not create ambiguous pronouns or decorative sources.
+
+## 2026-08-04 - proactive terminal-table accessibility repair
+
+### Audit result
+
+The large-flat-file lesson from a returned Science submission was applied to another candidate before review. Its scientific proof and answer were unchanged, but both database-table citations still used text exports and the terminal step asked the reviewer to find a row in the final text file.
+
+### Repair
+
+Both text files were replaced by official workbooks from the same agency release. The location workbook now has two named-column filters that leave one record. The analysis workbook has record-key, laboratory-sample, and mineral filters that leave one terminal row. The correction comment, mapped field, and answer are then read from that row without Ctrl+F.
+
+### Reusable lessons
+
+- Apply reviewer lessons across every active candidate, not only the submission that received the comment.
+- A smaller text export can still fail the terminal-source rule; file size is not the only issue when Ctrl+F locates the answer.
+- Preserve the source ecosystem and evidence by switching formats within the same official release rather than changing the scientific chain.
+- Reconfirm that each specified filter sequence leaves exactly one row before replacing the submitted sources.
+- Keep raw text exports locally for audit if useful, but omit them from the trajectory and verification-source list.
