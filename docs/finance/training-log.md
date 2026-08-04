@@ -80,6 +80,32 @@ The exact institution, identifiers, value, URLs, and PDF page remain in ignored 
 - A schema file is redundant when the blank form and completed filing already establish the row, column, mnemonic, label, and unit.
 - APIs can be useful for private discovery and cross-checking, but the submitted terminal source should be a permitted HTML page or PDF that a reviewer can inspect directly.
 
+## 2026-08-04 - direct-terminal-URL repair after follow-up review
+
+### Review outcome
+
+The machine-readable evidence had been replaced successfully, but the follow-up review found that the terminal trajectory still ended at a regulator search portal. The instructions asked the reviewer to configure a report type, date, and identifier, generate the results, and then open the completed filing. The reviewer required the final citation to open the answer-bearing record directly.
+
+### Repair
+
+1. Kept the tested prompt and verified answer unchanged.
+2. Removed the general facsimile-search portal from the submitted source list.
+3. Removed every terminal instruction that asked the reviewer to build or execute a lookup.
+4. Replaced the portal with the regulator's record-specific viewer URL, whose parameters fix the report family, historical institution, and reporting date.
+5. Opened that URL in a fresh session and followed its embedded facsimile response.
+6. Rendered the decisive page again and confirmed that the record identity, period, form, schedule, item, column, field mnemonic, unit, and final value are visible together.
+
+No target-model query was run and no platform form was submitted by the agent.
+
+### Reusable lessons
+
+- A human-readable source can still fail review when its URL stops at a search form rather than the answer-bearing record.
+- Distinguish URL query parameters that identify one fixed record from instructions that require a reviewer to construct and submit a search.
+- The terminal trajectory should be reproducible with one click followed by page navigation, not a sequence of form selections.
+- Test direct viewer URLs in a fresh session. A link that works only after a prior portal search is not a valid standalone final citation.
+- Verify the embedded or returned document itself; an HTML viewer shell is acceptable only when the cited URL automatically loads the completed human-readable filing.
+- When a reviewer identifies one remaining source-layer defect, freeze the prompt and answer and repair only the terminal access path.
+
 ## 2026-08-04 - successor-certificate and amount-versus-count candidate
 
 ### Research decisions
