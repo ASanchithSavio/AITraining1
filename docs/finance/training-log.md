@@ -79,3 +79,33 @@ The exact institution, identifiers, value, URLs, and PDF page remain in ignored 
 - Prefer a completed human-readable regulatory facsimile over an API row when the facsimile prints the field mnemonic and value in the same cell.
 - A schema file is redundant when the blank form and completed filing already establish the row, column, mnemonic, label, and unit.
 - APIs can be useful for private discovery and cross-checking, but the submitted terminal source should be a permitted HTML page or PDF that a reviewer can inspect directly.
+
+## 2026-08-04 - successor-certificate and amount-versus-count candidate
+
+### Research decisions
+
+1. Re-read the full Finance candidate record, Finance review gates, cross-domain review diagnostics, and current status before selecting a new mechanism.
+2. Rejected acquisition candidates whose difficulty ended after finding one plainly labelled Call Report cell.
+3. Selected a completed holding-company acquisition whose approved bank combination distinguishes an acquired national bank from surviving state banks in two states.
+4. Verified that a public merger table assigns different regulator certificates to the acquired bank and the surviving Louisiana bank. A current-name or successor-certificate lookup therefore opens the wrong historical reporter.
+5. Used the completed transaction date to select the last quarter-end before consummation, rather than relying on the regulatory approval date.
+6. Chose a temporary statutory deposit-insurance category whose completed filing presents a dollar amount and an account count as adjacent memorandum items.
+7. Retrieved the official completed Call Report through the public facsimile interface. The target filing uses the domestic-and-foreign-offices form, while the surviving Louisiana bank uses the domestic-only form.
+8. Rendered and visually inspected the target filing's cover and decisive page, plus the independent merger-table page. The terminal count, adjacent amount, institution name, report date, form type, and regulator identifiers are all visible in permitted human-readable sources.
+9. Ran shortcut searches combining the historical institution, date, statutory category, and proposed value. No result exposed the intended institution-field-value join.
+
+### Current status
+
+One 129-word Finance candidate passed the entity, event-date, period, semantic-type, source-format, visual-verification, shortcut, grammatical-attachment, and process-instruction gates. Its difficulty does not depend on JSON, YAML, a large text export, Ctrl+F, arithmetic, or an obscure field code supplied without meaning.
+
+The candidate retains four source-grounded failure points after the acquisition is recognized: acquired institution versus surviving institution, target certificate versus successor certificate, pre-consummation quarter, and account count versus adjacent dollar amount. The exact prompt, answer, identifiers, URLs, and distractor values remain in ignored local notes.
+
+No target-model prompt was tested and no platform form was submitted by the agent. The candidate is ready for one fresh user-run GPT-5.5 extended-thinking test.
+
+### Reusable lessons
+
+- A surviving bank's certificate can silently redirect a historical lookup away from the acquired reporter even when the later brand name looks correct.
+- Bank charter type and form type are useful cross-checks: a national bank with foreign offices should not be replaced by a state bank filing a domestic-only form.
+- A statutory reporting category can create a meaningful semantic fork when the filing separately reports an amount and a count.
+- State role labels are safer than repeated pronouns when a transaction involves several similarly named bank subsidiaries.
+- The public facsimile's direct HTML URL is a reviewer-friendly terminal source because it renders the completed PDF while preserving institution and date parameters.
