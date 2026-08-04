@@ -30,6 +30,14 @@ Use these gates with the general method. Exact entities, filing values, record i
 - Use the official form or data dictionary to prove the field meaning and the regulator's institution-level data to prove the value.
 - The final answer must be printed in the selected record; code may locate or validate the row but must not derive the answer.
 
+## Source-format compliance
+
+- Do not cite JSON or YAML as submitted trajectory or verification sources for this workflow.
+- If one machine-readable source is rejected, audit the entire path and replace every source with the same format, not only the two examples named by the reviewer.
+- Prefer official HTML pages and completed PDF facsimiles that expose the entity, period, field coordinate, unit, and value to direct human inspection.
+- Use APIs and schemas only as private discovery or validation aids when necessary; they must not be the evidence a reviewer has to accept.
+- Remove a schema handoff when the official form and completed filing already print the mnemonic, label, column, and value together.
+
 ## Source graph and shortcut audit
 
 - Prefer independent sources for transaction identity, effective date, form semantics, and terminal data.

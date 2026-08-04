@@ -55,3 +55,27 @@ The returned integer is absent from every relevant field on the correct institut
 - Compare the wrong answer against sibling, predecessor, successor, and historical-name records; a matching value can reveal the first divergence.
 - When several wrong records contain the same value, report only the common proven error class. Do not invent a precise model path from the final answer alone.
 - This mechanism is worth preserving: entity hierarchy, event-bounded period selection, and a separate field-coordinate decision remained necessary after the transaction was identified.
+
+## 2026-08-04 - source-format repair after platform review
+
+### Review outcome
+
+The platform reviewer considered the golden trajectory substantively good but returned it because the terminal value was cited from a JSON response and an intermediate field mapping was cited from YAML. The prompt, entity resolution, reporting-period logic, field coordinate, and gold answer were not challenged.
+
+### Repair
+
+1. Kept the prompt and gold answer unchanged.
+2. Removed every JSON and YAML citation from the submission path, including a machine-readable institution lookup that the reviewer did not separately mention.
+3. Replaced the identity lookup with an official human-readable regulator page.
+4. Replaced the terminal API row with the official individual Call Report facsimile PDF available through the regulator's institution-report portal.
+5. Visually verified the decisive page. The completed facsimile prints the institution, reporting date, schedule, item code, column heading, unit, and value together, so no schema mapping or field-name translation is needed.
+
+The exact institution, identifiers, value, URLs, and PDF page remain in ignored local notes. No target-model prompt was run and no platform form was submitted by the agent.
+
+### Reusable lessons
+
+- Source-format compliance is a separate gate from factual correctness. A correct trajectory can still be rejected when its evidence is delivered in a prohibited serialized format.
+- Do not wait for a reviewer to enumerate every instance of the same defect. If JSON or YAML is rejected, remove all such citations from the entire path.
+- Prefer a completed human-readable regulatory facsimile over an API row when the facsimile prints the field mnemonic and value in the same cell.
+- A schema file is redundant when the blank form and completed filing already establish the row, column, mnemonic, label, and unit.
+- APIs can be useful for private discovery and cross-checking, but the submitted terminal source should be a permitted HTML page or PDF that a reviewer can inspect directly.

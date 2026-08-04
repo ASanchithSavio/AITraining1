@@ -55,8 +55,11 @@ Deliberate noun repetition is preferable to elegant pronouns when several entiti
 - homepage/search result rather than the direct destination;
 - cited fact removed or on a different page;
 - answer visible only inside an image, chart, or illegible scan;
+- JSON or YAML submitted where the review workflow requires human-readable evidence;
 - repeated pages from too few independent web hosts; or
 - extra URL that is not needed to solve the question.
+
+Treat source format as a preflight check, not a cosmetic edit. Classify every trajectory and verification URL before submission. If a reviewer rejects a serialized format, replace every instance of that format across the full evidence path. An API may still help with private discovery, but the cited terminal record should be a permitted HTML page or PDF where a reviewer can directly see the selected entity, date, field, unit, and answer.
 
 ## Model-evaluation defects
 
