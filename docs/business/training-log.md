@@ -160,3 +160,21 @@ The agent did not test the target model and did not submit a platform form. The 
 - Check every upstream narrative for the final value. If the answer is repeated before the terminal source, the map step is decorative and the candidate should be rejected.
 - For image-based evidence, record both the sequence image and printed sheet, then verify the exact wording at original resolution.
 - Mentioning one terminal source type is not a wall-to-wall source map. Naming every intermediate archive, publication, and lookup step in the prompt is.
+
+## 2026-08-04 - fire-insurance candidate answered correctly and retired
+
+### Outcome
+
+The user-run extended-thinking target returned the independently verified terminal value after roughly half an hour. No agent-run target test or platform submission occurred. Because the final answer was correct, the candidate is retired regardless of the long runtime.
+
+### What the result shows
+
+The target successfully preserved all of the intended distinctions: original plant rather than later plant, first map edition after the addition, indexed property sheet, normal sprinkler supply rather than emergency storage, and capacity rather than pump rate. The visual map and same-system confusers increased research time but did not create a durable model failure.
+
+### Reusable lessons
+
+- A long attempt is not evidence that a candidate stumped the target. Wait for the terminal answer and compare it with the verified gold.
+- Multiple post-document decisions can still be jointly solvable when every decision has explicit archival support and the terminal note labels each equipment role clearly.
+- Image-only evidence and grounded confusers improve quality but do not guarantee failure against extended reasoning.
+- Retire a correctly answered architecture instead of adding more upstream identity clues. Extra founder, property, or edition clues would increase length without changing the terminal mechanism.
+- For the next Business candidate, change the evidence operation itself: consider a controlling amendment, cross-document nomenclature conflict, or version-dependent coordinate rather than another map-note transcription.
