@@ -13,6 +13,10 @@ This repository is a memory system for prompt research. It does not run model te
 
 Do not substitute chat history for this reload. Public notes contain generalized, share-safe lessons; ignored private notes contain the exact prompts, answers, sources, and manual outcomes needed to avoid repeating a tested failure. If the private notes are absent in a fresh checkout, record that context gap before proposing a candidate.
 
+## Retired-architecture memory gate
+
+Before delivering a candidate, record its source-family sequence and its final two selection operations, then compare that fingerprint with every relevant ignored retirement record and the public domain log. Reject a near-match even when it uses different names, dates, jurisdictions, or answer fields. A solved architecture may return only after a genuinely new terminal mechanism preserves multiple source-backed alternatives after the central entity is identified; extra upstream clues or a noisier scan do not qualify.
+
 ## Candidate record
 
 Keep exact candidates in ignored local notes with:

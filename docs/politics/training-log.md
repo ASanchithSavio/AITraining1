@@ -43,3 +43,21 @@ Several Politics branches were rejected before drafting a test candidate:
 - A preferential-election transfer path was not promoted because the accessible result pages did not preserve the complete intermediate distribution needed for a fair, reproducible terminal selection.
 
 The reusable lesson is that a difficult comparison cannot be rescued by a clue that independently identifies its answer. For a future Politics candidate, the person or record should emerge only from the intersection of independently sourced sets, and at least two meaningful decisions should remain after the central event is known.
+
+## 2026-08-05 - roll-call intersection to directory candidate retired
+
+### Manual-test result
+
+The user ran a frozen Politics candidate with the required target model. The model returned the verified answer correctly in 1 minute 32 seconds and accurately described every decisive stage. The candidate is retired as a model success and prompt-design failure; no wrong-answer failure is claimed, and elapsed time does not alter the result.
+
+### Cause
+
+The candidate began with a small bounded set of election winners and used two public roll calls as an identity intersection. That looked multi-source, but after the member was identified the chain collapsed into a minimum over two county rows, a one-to-one county/city mapping, and direct transcription of an office field from a fixed directory. The several sources improved verification without sustaining ambiguity: each remaining hop had one obvious output, and the neighbouring office entries ceased to be live alternatives as soon as the county was known.
+
+### Permanent change
+
+- Retire the complete architecture, not merely its entities or wording.
+- Do not return a superficial variant that swaps in different districts, votes, years, jurisdictions, directories, or address fields.
+- Do not count an easy geographic crosswalk as a meaningful post-identification decision when it selects a unique directory row.
+- Future Politics candidates must leave at least two plausible, source-backed answers alive after identity resolution and resolve them through a new mechanism such as a controlling amendment, correction, sequence, footnote, or genuinely consequential version boundary.
+- Compare the final two operations of every new candidate against ignored retirement records before it can be delivered for testing.

@@ -41,7 +41,17 @@ Use these gates in addition to the general method. Exact candidates and source U
 - A plausible wrong answer should be valid in a nearby version or scope, not an unrelated famous fact.
 - Reject simple metadata lookups and terminal values already reproduced in snippets.
 
-## 7. Empirical gate
+## 7. Retired-architecture gate
+
+- Reject the sequence `small officeholder set -> roll-call intersection -> minimum/maximum over a few geographic rows -> directory or address-field transcription`.
+- Changing the politicians, jurisdiction, legislation, election year, directory edition, or requested contact field is a surface variation, not a new architecture.
+- Treat a geographic crosswalk as decorative when it merely maps the already selected jurisdiction to one obvious office row.
+- Reject a candidate when the resolved identity and jurisdiction leave a single directly printed field in an explicitly named terminal directory, even if every upstream source is technically necessary.
+- A successor to this pattern must retain at least two live, source-backed terminal alternatives after identity resolution and use a genuinely different mechanism, such as a controlling correction, disputed version boundary, sequence reconciliation, or consequential footnote.
+- Compare every proposed Politics candidate's source-family sequence and final two selection operations with the ignored retirement records before delivery. A near-match is not returned for testing.
+
+## 8. Empirical gate
 
 - A candidate that passes these checks is only ready for a manual test; it is not proven difficult.
 - If the target model retrieves the correct historical versions and answers correctly, retire the candidate rather than adding decorative political clues.
+- Record a correct result as a model success and prompt-design failure; elapsed time never changes that classification.

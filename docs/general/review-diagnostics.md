@@ -17,6 +17,8 @@ Use this taxonomy to identify whether a rejection came from prompt validity, evi
 - **Reference leak:** a source name, distinctive phrase, or unsurfaced answer is embedded in the question.
 - **Terminal-coordinate leak:** the prompt identifies the terminal document and supplies the exact page, row, serial, or column, reducing the final task to transcription.
 - **Post-identification collapse:** the upstream chain looks long, but after the central entity or document is identified only one obvious selection remains.
+- **Deterministic multi-source funnel:** several sources are technically necessary, but each clue selects one obvious row or field, so source count adds provenance without preserving branching.
+- **Directory-field collapse:** identity plus a simple jurisdiction crosswalk selects one listing, after which the requested address, room, suite, telephone, or title is direct transcription.
 - **Type-filter leak:** the requested answer type uniquely reveals which phrase to copy from a small terminal cell without requiring another evidence decision.
 
 ## Grammatical attachment preflight
@@ -86,5 +88,7 @@ A prompt can be technically valid yet fail a multi-run automated threshold becau
 6. Re-run deterministic validation before another expensive test.
 
 Measure difficulty after the main record has been identified. A candidate is weak when the remaining work is a one-page correction, one exact coordinate, or one type-filtered transcription. Upstream sources count toward difficulty only when they change the terminal selection or eliminate a live competing answer; sources that merely confirm the record's identity add provenance, not resistance.
+
+Fingerprint a retired architecture by its source-family sequence and final two selection operations, not by its named entities. Changing names, years, jurisdictions, or terminal fields does not rehabilitate a solved deterministic funnel. Reject a near-match before delivery and require a materially different terminal mechanism.
 
 The objective is a repeatable, legitimate wrong answer—not a refusal and not a lucky one-off miss.
