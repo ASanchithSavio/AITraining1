@@ -158,3 +158,17 @@ The golden package therefore explains only what the evidence supports: the targe
 - Without a completed reasoning trace or a source-matched wrong value, stop the diagnosis at the first fact that can be proved.
 - State uncertainty narrowly. Honest causal limits make a golden package stronger than a confident but invented wrong-path explanation.
 - Preserve human-readable HTML/PDF evidence with exact page locations even when the model never reaches a terminal response.
+
+## 2026-08-05 - process-instruction repair after prompt review
+
+### Review outcome
+
+A previously verified acquisition-and-filing prompt was returned because its wording did too much of the solver’s work. It used imperative entity-selection and exclusion clauses, assigned successive facts to named regulatory sources, disclosed the complete terminal form coordinate, and ended with an imperative integer-only instruction.
+
+### Repair and lessons
+
+- Freeze the verified answer, failure diagnosis, trajectory, and direct terminal source when the defect is prompt wording alone.
+- State the transaction participants and geography as historical facts, then ask naturally for the semantically named financial figure.
+- Remove agency-by-agency attribution, form number, schedule, item, column, mnemonic, certificate, and report date from the prompt when the evidence chain can discover them.
+- Replace `select`, `exclude`, and `answer with` with an interrogative whose subject already fixes the legal entity, reporting period, field meaning, unit, and expected numeric type.
+- Treat the repaired wording as a new prompt version. The old target response and share link cannot support it; a fresh user-run test is mandatory.

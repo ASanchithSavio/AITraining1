@@ -362,3 +362,18 @@ The exact local record now preserves a submission-ready failure reason, stepwise
 - Do not assume that a request for rules and a failure reason authorizes omission of the trajectory or verification sources when the conversation has established the full-package format.
 - Check requested headings before sending, just as carefully as the terminal row and column.
 - Repair an incomplete package without changing a frozen prompt or verified answer.
+
+## 2026-08-05 - natural-question, attachment, and resubmission review
+
+### Review outcome
+
+A correction-field candidate retained a valid gold answer but was returned because the prompt still resembled a chronological source path. The reviewer also requested a shorter evidence-only failure explanation, a compact Search/Fetch/Verify trajectory, and a new target response with a matching link after the prompt edit. An initial rewrite then failed the grammatical-attachment check because a location clause could attach to either the viewpoint or the nearby feature, and `both` referred to a pair not yet introduced explicitly.
+
+### Reusable changes
+
+- Keep technical identity and field constraints, but remove named intermediate publications, workbook sequence, record identifiers, and filter operations from the prompt.
+- Ask one relational scientific question; do not turn factual attribution into a disguised step list.
+- Split viewpoint geometry into its own sentence and name both physical features before applying a shared age statement.
+- Keep the failure explanation to the decisive mapping, verified cell, and returned-value mismatch.
+- Compress the trajectory to the source outputs consumed by the next hop; keep interface mechanics out of the reviewer-facing proof.
+- Version the test evidence with the prompt. A new wording must earn a new wrong answer; if the rerun reaches the gold value, the candidate is solved.

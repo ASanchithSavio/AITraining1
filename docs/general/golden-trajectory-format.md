@@ -52,6 +52,8 @@ For each source, record:
 - Preserve the prompt's exact scope throughout the proof.
 - End with the decisive comparison and one atomic answer.
 - Do not pad the trajectory with repeated searches, navigation clicks, or generic confirmations.
+- Treat the trajectory as a verification path, not a software tutorial. Omit menu paths, spreadsheet-filter clicks, and mechanical interface actions unless one of them is necessary to disambiguate the evidence.
+- Prefer one compact Search/Fetch/Verify unit per consumed source. State the resulting identifier, row, or field directly instead of narrating every action used to reveal it.
 - Do not treat several pages on one host as independent source ecosystems.
 - Keep confidential prompt wording, answer keys, task URLs, screenshots, and copied platform text out of the public repository.
 

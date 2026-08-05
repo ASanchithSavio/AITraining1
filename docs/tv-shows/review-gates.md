@@ -22,3 +22,6 @@ Use these gates with the general method. Exact series, performers, report serial
 - Search the title with the characteristic label and proposed value. Reject any candidate whose full pair appears in an indexed snippet.
 - Exclude predecessor or adjacent rows only when they are genuine in-scope confusers.
 - Require human-readable HTML/PDF evidence and exact page locators; do not use JSON, YAML, fan wikis, or an unbounded text search as terminal proof.
+- Do not enumerate every predecessor, adjacent serial, and neighboring program in the prompt when those rows are the intended confusers. Explicit exclusions can solve the terminal scope problem for the model.
+- Reject a two-table candidate when title identification leads to one direct serial and the second table requires only copying one plainly labelled value.
+- A replacement after a correct result must change the evidence operation, not add more performer or character clues around the same serial-to-row lookup.

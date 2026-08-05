@@ -27,6 +27,8 @@ If the ignored local notes are unavailable, say that exact candidate context is 
 - Re-run the active-domain gates, shortcut audit, source-necessity check, and grammatical-attachment check on the exact final wording.
 - Keep URLs, internal identifiers, answer keys, and research instructions out of the prompt unless the task itself requires them.
 - Do not run the target model when testing is reserved for the user.
+- Prefer an interrogative whose noun already implies the answer type. An imperative such as `Answer with the integer only` can be classified as a process instruction even when it only controls formatting.
+- Bind every model response and share link to the exact prompt version. Any wording change requires a fresh run and a new matching link; never attach an older failure to a repaired prompt.
 
 ## When confirming an answer
 
@@ -46,6 +48,8 @@ Use the smallest causal claim supported by evidence:
 5. **Training change:** record the reusable architecture, wording, or review-gate lesson.
 
 Do not infer an internal browsing path merely because a wrong answer resembles a nearby source value. Describe the proved scope, entity, row, column, or hierarchy error.
+
+When the form asks for two to four sentences, cite the decisive field or row, state the verified value, and explain why the returned value does not match. Keep speculative mechanisms and exhaustive lists of every unrelated field in private notes.
 
 ## When writing the golden package
 

@@ -60,6 +60,10 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Name the terminal source only when its identity is part of the requested coordinate. Let the solver discover intermediate sources.
 - After removing source names, confirm that all clues still select one entity and that every pronoun, modifier, and relationship has one grammatical attachment.
 - A process-instruction repair must not change the answer, evidence graph, golden trajectory, rules, or sources unless the underlying facts also failed review.
+- Factual prose can still reveal a research itinerary when successive sentences correspond in order to one page, paper, workbook, and database.
+- Introduce two specimens, domes, instruments, or channels by name before using `both`; never rely on an implied second member.
+- Place viewpoint clauses beside `viewpoint`, sample clauses beside `sample`, and field-mapping clauses beside `field`. Repeat the noun when a nearby feature could capture the modifier.
+- A repaired prompt requires a fresh target-model response and matching share link. Reviewer evidence from the earlier wording cannot be carried forward.
 
 ## Promotion gate
 
