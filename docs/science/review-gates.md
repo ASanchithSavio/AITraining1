@@ -52,6 +52,8 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Search the specimen description, field code, terminal value, and likely post-identification query combinations.
 - Reject candidates whose answer appears in snippets, alternate table extractions, or an obvious exact query.
 - Record publisher-access or author-copy dependencies as retrieval risks before testing.
+- For an erratum-controlled answer, search the operation or specimen label together with the exact terminal interval and correction vocabulary. Reject the candidate if one erratum sentence gives the complete old-to-new replacement.
+- Do not treat a superscript flattened by OCR as a sufficient confuser when the operation heading and terminal coordinates still isolate the correction.
 
 ## Prompt language and process
 

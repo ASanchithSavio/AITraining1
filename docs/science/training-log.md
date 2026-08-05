@@ -377,3 +377,26 @@ A correction-field candidate retained a valid gold answer but was returned becau
 - Keep the failure explanation to the decisive mapping, verified cell, and returned-value mismatch.
 - Compress the trajectory to the source outputs consumed by the next hop; keep interface mechanics out of the reviewer-facing proof.
 - Version the test evidence with the prompt. A new wording must earn a new wrong answer; if the rerun reaches the gold value, the candidate is solved.
+
+## 2026-08-05 - verbatim erratum replacement solved by the target model
+
+### Outcome
+
+A user-run extended-thinking target test correctly returned the revised frequency printed in a federal aviation report's errata after 13 minutes 1 second. The report distinguishes a plain-numbered instructional airplane from a superscripted pipeline-survey airplane of the same design. The errata replaces the original terminal-table value with the value returned by the model.
+
+The candidate is retired as correctly solved. Elapsed time does not convert a correct response into a benchmark failure. The agent did not run the target model, and no platform submission was reported.
+
+### Why the route collapsed
+
+- The prompt supplied nearly the entire terminal coordinate: aircraft type, superscript distinction, operation class, acceleration interval, and the instruction to use the corrected value.
+- The report's errata states the complete old-to-new replacement in one sentence. Once the aircraft was reconciled to the superscripted type, no further row, column, version, or schema decision remained.
+- The superscript's imperfect OCR rendering was a retrieval inconvenience, not a durable reasoning barrier. The surrounding operation label and acceleration interval still made the correction line identifiable.
+- The museum and military-designation clues helped identify the airplane but did not control a later independent choice after the terminal report was found.
+
+### Reusable lessons
+
+- Reject a correction candidate when an indexed erratum prints the final answer verbatim and the prompt supplies every coordinate needed to locate that sentence.
+- Before testing, search combinations of the report description, operation class, anonymized type, interval, and words such as `errata`, `change`, and `corrected`.
+- OCR ambiguity involving a superscript or footnote marker is not enough by itself. Difficulty must survive after the solver recognizes the underlying type.
+- A correction mechanism needs at least one substantive post-discovery decision beyond reading an old-to-new replacement, such as resolving a separate schema field, specimen, version, or independently selected table axis.
+- Count every upstream source by what it changes. Identity evidence that only confirms a model already recoverable from the terminal report is not an additional consumed hop.
