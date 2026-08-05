@@ -12,6 +12,8 @@ Use these gates with the general method. Exact places, precincts, landmarks, tab
 ## Terminal table
 
 - Verify multi-level census headers and row alignment from the rendered page image.
+- Require one full-page or full-table view that preserves the governing header and row label, plus a readable target-cell crop. Never establish the gold from a headerless numerical crop alone.
+- Perform a second independent digit read at original resolution and compare the cells immediately before and after the target. Record any scan artifacts that could turn one digit into another.
 - State the requested header naturally, but do not supply the table number, page, precinct number, and adjacent value together.
 - Ask for a directly printed census cell. Do not derive a residual, percentage, rate, or boundary conversion.
 - Reject candidates whose answer is exposed by a modern profile, search snippet, OCR preview, or one obvious city-total row.

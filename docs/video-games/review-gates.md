@@ -38,3 +38,5 @@ Use these gates with the general method. Exact game titles, prototype names, swi
 - Repeat `released game`, `selected option switch`, `buffered data line`, and `main processor` when a pronoun could attach to multiple devices.
 - A candidate that passes these checks is ready for one fresh user-run target-model test; it is not yet an empirical model failure.
 - A correct terminal answer retires the architecture regardless of elapsed time.
+- Do not name every wrong device boundary in the prompt when those pins are the intended confusers. Explicitly excluding the sound processor, buffer input, and buffer output can reduce a multi-sheet trace to one obvious destination.
+- Retire a labelled signal-trace architecture after a correct result; adding more game-history clues does not change the terminal reasoning operation.

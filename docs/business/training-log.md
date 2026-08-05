@@ -197,3 +197,11 @@ After the fire-insurance-map mechanism was solved correctly, the replacement Bus
 ### Status and lesson
 
 The candidate is ready for one user-run target-model test. Exact entities, values, URLs, and wording remain in ignored local notes. A railroad route is useful only when it distinguishes a carrier from a real sibling; the ownership event is useful only when it selects the report year; and the terminal schedule remains substantive only when both row and column scope must be preserved.
+
+## 2026-08-05 - first railroad target result
+
+The user-run extended-thinking model returned a number that does not match the visually reverified freight-train yard-switching cell. This is a meaningful wrong answer on the tested wording. The response alone does not establish whether the first divergence was the carrier, reporting year, service row, or column, so the exact cause remains unassigned.
+
+The tested wording nevertheless contains imperative selection, exclusion, and output-format language that may fail the current process-instruction review. Any natural-language repair creates a new prompt version and requires a fresh target response and matching link; the existing wrong response cannot be transferred to revised wording.
+
+Exact entities and values remain in ignored local notes. No agent-run target test occurred.

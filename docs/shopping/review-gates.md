@@ -22,3 +22,5 @@ Use these gates with the general method. Exact products, makers, patents, catalo
 - Search natural combinations of model history, capacity, catalogue year, price wording, and proposed answer. Reject any result that exposes the complete product-price pair.
 - Do not use current resale listings, collector estimates, search snippets, JSON, YAML, or arithmetic as final evidence.
 - A candidate is ready only when at least two meaningful choices remain after the catalogue is found: the correct product row and the correct price type or neighboring variant.
+- Do not enumerate every neighboring capacity, action, and excluded product in the prompt when those listings are the intended confusers. Excessive exclusions can uniquely reveal the catalogue row.
+- Retire a product-to-printed-price architecture after a correct result. Additional maker history does not change the terminal transcription task.

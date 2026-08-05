@@ -70,3 +70,5 @@ Use these gates with the general method. Exact company names, subsidiary names, 
 - Prefer same-table confusers that preserve the carrier and unit but change service category or total scope.
 - Reject the candidate if the prompt supplies the carrier name, report year, schedule number, row, and column so completely that only transcription remains.
 - Visually verify dense annual-return tables. Do not rely on OCR column order for blank cells, multi-level headings, or totals.
+- Express the carrier, year, service, and column as the subject of one natural question. Avoid imperative `use`, `do not use`, and `answer with` clauses even when they describe valid confusers.
+- Bind a wrong target response to the exact tested wording. If process-language repair is required, rerun the revised prompt rather than reusing the old response.

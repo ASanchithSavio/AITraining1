@@ -32,3 +32,11 @@ The candidate is ready for one fresh user-run target-model test. The agent did n
 The active wording was expanded into the target length band and now distinguishes the released vector game, the frame-advance control, the display-damage warning, the octal-buffer boundary, and the main processor. The buffer input, buffer output, and sound processor remain explicit exclusions because each is a real same-trace confuser. The prompt still withholds the switch number, board coordinate, data-line label, processor type, schematic sheets, and terminal pin.
 
 The exact v2 wording passed a fresh process-instruction and grammatical-attachment audit. This is a wording freeze, not an empirical result; the user still performs the first target-model test.
+
+## 2026-08-05 - first target result and retirement
+
+The user-run extended-thinking model returned the verified processor pin in just over four minutes. The candidate is retired as correctly solved; no agent-run target test occurred.
+
+The signal path was deterministic once the released game and freeze switch were identified. The prompt also explicitly removed the sound processor and both buffer-pin values, neutralizing the strongest device-boundary confusers before the schematic lookup. Multiple sheets and three source ecosystems added provenance, but the labelled data line made the terminal trace reliable.
+
+Do not repair this architecture with more prototype aliases or maintenance history. A replacement Video Games candidate must change the terminal operation rather than reuse a switch-to-bus-to-pin trace.

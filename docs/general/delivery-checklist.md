@@ -33,6 +33,7 @@ If the ignored local notes are unavailable, say that exact candidate context is 
 ## When confirming an answer
 
 - Reopen the terminal source and verify the exact row, column, chart box, field, unit, and version.
+- For dense or scanned tables, inspect the complete header and row label at original resolution, then perform a second independent read of the target cell and both adjacent cells. A tight crop without headers is not sufficient ground-truth proof.
 - Compare the proposed answer with the recorded parent, sibling, adjacent row, neighbouring period, and similarly named entity values.
 - Distinguish an equivalent formatting variant from a genuinely different answer.
 - Give the verified answer directly and state uncertainty only when the source itself leaves uncertainty.

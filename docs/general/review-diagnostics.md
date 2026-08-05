@@ -36,6 +36,7 @@ Deliberate noun repetition is preferable to elegant pronouns when several entiti
 ## Answer defects
 
 - incorrect gold value;
+- visually misread digit or punctuation from a dense scan, especially when the verification crop omits the governing header or row label;
 - sentence, explanation, range, alternative pair, or binary answer;
 - arithmetic-derived value instead of a printed fact;
 - answer not provable from a live authoritative source; or
