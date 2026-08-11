@@ -30,6 +30,14 @@ If the ignored local notes are unavailable, say that exact candidate context is 
 - Prefer an interrogative whose noun already implies the answer type. An imperative such as `Answer with the integer only` can be classified as a process instruction even when it only controls formatting.
 - Bind every model response and share link to the exact prompt version. Any wording change requires a fresh run and a new matching link; never attach an older failure to a repaired prompt.
 
+## Authorship-policy gate
+
+- Recheck the platform's current authorship policy instead of relying on an older instruction page or prior confirmation.
+- Treat an automated `LLM use detected` result as a separate authorship-policy rejection. It does not invalidate a verified answer, source graph, trajectory, or difficulty result.
+- Do not claim that an LLM-generated or LLM-edited prompt is human-written, and do not promise that stylistic polishing will pass an authorship detector.
+- Do not iterate superficial paraphrases for the purpose of evading an authorship check. One rejection does not prove which words or stylistic features triggered the detector.
+- When the active rule requires human authorship, preserve the research evidence and let the user independently write the submission wording. The agent may subsequently audit factual accuracy, grammar, ambiguity, and answer alignment without rewriting the prompt for submission.
+
 ## When confirming an answer
 
 - Reopen the terminal source and verify the exact row, column, chart box, field, unit, and version.

@@ -12,6 +12,7 @@ Use this taxonomy to identify whether a rejection came from prompt validity, evi
 - **Unnatural process instructions:** the prompt tells the solver what to search, which page to open, or which table to read.
 - **Imperative output control:** commands such as `select`, `exclude`, `use`, or `answer with` can be flagged as process instructions. Express target scope and answer type inside the factual question instead.
 - **Wall-to-wall source assignment:** a prompt can narrate the search path without using explicit search verbs when successive sentences assign each clue to a named page, filing, report, or database.
+- **Authorship-policy rejection:** the platform flags the exact wording as LLM-generated or LLM-edited. Record this separately from grammar, process language, factual validity, evidence quality, and model difficulty; do not infer a detector trigger from one result or relabel the text as human-written.
 - **Underconstrained:** the answer is obvious, general knowledge, or available from one or two lookups.
 - **Unnecessary constraint:** a clue adds words but eliminates no candidate.
 - **Reference leak:** a source name, distinctive phrase, or unsurfaced answer is embedded in the question.

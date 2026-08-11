@@ -66,6 +66,7 @@ Use these gates with the general method. Exact candidates, answers, record ident
 - Introduce two specimens, domes, instruments, or channels by name before using `both`; never rely on an implied second member.
 - Place viewpoint clauses beside `viewpoint`, sample clauses beside `sample`, and field-mapping clauses beside `field`. Repeat the noun when a nearby feature could capture the modifier.
 - A repaired prompt requires a fresh target-model response and matching share link. Reviewer evidence from the earlier wording cannot be carried forward.
+- If the platform's active authorship check requires human-written wording, do not provide another submission-ready LLM rewrite or describe an LLM-edited version as human-written. Freeze the verified scientific evidence and gold answer, wait for independently authored wording, and limit subsequent assistance to factual, grammatical, attachment, and alignment review.
 
 ## Promotion gate
 

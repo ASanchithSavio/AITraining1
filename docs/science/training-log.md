@@ -400,3 +400,20 @@ The candidate is retired as correctly solved. Elapsed time does not convert a co
 - OCR ambiguity involving a superscript or footnote marker is not enough by itself. Difficulty must survive after the solver recognizes the underlying type.
 - A correction mechanism needs at least one substantive post-discovery decision beyond reading an old-to-new replacement, such as resolving a separate schema field, specimen, version, or independently selected table axis.
 - Count every upstream source by what it changes. Identity evidence that only confirms a model already recoverable from the terminal report is not an additional consumed hop.
+
+## 2026-08-11 - authorship-detector rejection after a process-language repair
+
+### Observed
+
+A correction-controlled fan-table prompt first failed grammar and process-language checks because it named the terminal report, erratum sheet, table block, and row coordinate. A natural-language rewrite removed those source-navigation details while preserving the verified answer and evidence. The platform then rejected that exact rewrite under its separate `LLM use detected` check and stated that prompts must not be generated or edited with an LLM.
+
+### Supported diagnosis
+
+The only proved result is that the exact LLM-assisted rewrite failed the platform's authorship check. The feedback did not challenge the scientific facts, corrected value, source version, golden trajectory, or answer. A single detector result does not establish which words, sentence rhythm, technical density, or other stylistic feature caused the classification.
+
+### Training change
+
+- Treat authorship compliance as an independent gate rather than another prompt-polishing problem.
+- Do not generate repeated paraphrases intended to evade the detector, claim that AI-edited wording is human-written, or promise detector acceptance.
+- Preserve the verified answer and evidence package when only the authorship layer fails.
+- When the active platform rule requires human authorship, wait for the user to author the next prompt version independently. Review that version for facts, grammar, attachment, source-path leakage, and answer alignment without rewriting it into submission prose.
