@@ -417,3 +417,35 @@ The only proved result is that the exact LLM-assisted rewrite failed the platfor
 - Do not generate repeated paraphrases intended to evade the detector, claim that AI-edited wording is human-written, or promise detector acceptance.
 - Preserve the verified answer and evidence package when only the authorship layer fails.
 - When the active platform rule requires human authorship, wait for the user to author the next prompt version independently. Review that version for facts, grammar, attachment, source-path leakage, and answer alignment without rewriting it into submission prose.
+
+## 2026-08-11 - mixed historical-table batch audit
+
+Five Science & Technology candidates from one user-run batch were rechecked against the original rendered pages rather than against the model's explanations.
+
+### Correctly solved candidates retired
+
+- A corrected flutter run matrix was solved in 3 minutes 20 seconds. The prompt named the report, disclosed that the replacement matrix controlled, and described the complete structural column and aerodynamic row. Once the PDF opened, the task was one obvious row-column intersection.
+- A coal-analysis candidate was solved in 12 minutes 25 seconds. The mine, collection date, underground location, and analytical basis reduced the two-volume bulletin to one laboratory number and one printed condition row.
+- A Pioneer detector candidate was solved in 25 minutes 45 seconds. Listing the three functioning channels made the absent channel a trivial set complement, while the exact day, sector, bandwidth, and `peak signal` label supplied the complete terminal coordinate.
+
+All three are retired despite different runtimes. Their common weakness is post-identification collapse: the prompt supplies enough terminal coordinates that the last source requires transcription rather than a remaining evidence decision.
+
+### Non-answer candidate
+
+A corrected launch-wind probability candidate produced no numeric answer after 32 minutes 42 seconds. The response correctly resolved the erratum and identified the physical table and requested row-column intersection, but stopped because it claimed that the scan could not be read. A fresh visual check showed that the cell is legible.
+
+This is a real non-response, but it is a less desirable benchmark mechanism than a source-grounded wrong value. Retrieval or rendering failure may vary across sessions and does not reveal a stable reasoning divergence. Keep such a result distinct from an answered-but-wrong run.
+
+### Meaningful wrong-cell candidate
+
+A corrected aerodynamic-table candidate returned a real coefficient from the replacement pages, but it came from a lateral-directional derivative column in the 25-degree flap block. The prompt asked for the basic pitching-moment coefficient in the 50-degree flap block on the preceding replacement page. The verified gold therefore remains unchanged.
+
+This is a defensible model failure because the returned value can be located exactly and the first divergence is observable: wrong coefficient family and wrong flap block inside the controlling corrected table. The error is not a digit transcription, unit equivalence, or unsupported theory about the model's search path.
+
+### Reusable lessons
+
+- Verify both the gold cell and the returned wrong value. A source-grounded wrong value permits a precise, human-readable failure diagnosis.
+- A replacement-page warning does not create difficulty when the prompt also supplies the exact row and column descriptions.
+- Do not count an explicit set complement as a reasoning hop. Naming all functioning channels makes the missing channel immediately recoverable.
+- Two volumes of one bulletin remain a deterministic lookup when a detailed sample description supplies the exact join key.
+- Prefer a stable semantic or table-block substitution over a failure caused only by PDF rendering or access.

@@ -110,4 +110,26 @@ Add these pre-test questions:
 
 If any answer is yes, remove the leak or reject the candidate. Several plausible neighbouring values do not create difficulty when the prompt has already explained how to avoid each one.
 
+## 2026-08-11 - ten-candidate outcome audit
+
+A batch audit produced seven correct answers, two source-grounded wrong answers, and one non-answer. Every outcome was checked against the original answer-bearing page, including the returned wrong values.
+
+The solved candidates shared four weak architectures:
+
+- corrected one-page matrix plus fully described row and column;
+- exact sample description plus named analytical basis inside one publication family;
+- explicit set complement plus exact event-table coordinate; and
+- unique person or accession identifier plus a named terminal column.
+
+The two useful wrong answers exposed stable, verifiable substitutions:
+
+- an administrative-row error in which a value from the taluk headquarters replaced the value for the selected village; and
+- a coefficient-family and configuration-block error in which a real derivative from one flap block replaced the requested basic coefficient from another block.
+
+The non-answer correctly found the controlling corrected table but stopped before reading a legible cell. Preserve it as a documented outcome, but rank it below a grounded wrong-cell result because access-dependent refusal is less repeatable.
+
+### Batch-audit rule
+
+For every returned value, search the controlling page and the strongest confusable pages for that exact value. If it is found, name the row, column, version, and scope difference precisely. If it is absent, diagnose only a generic mapping or transcription failure. Never invent a wrong-row story merely because it sounds plausible.
+
 The objective is a repeatable, legitimate wrong answer—not a refusal and not a lucky one-off miss.

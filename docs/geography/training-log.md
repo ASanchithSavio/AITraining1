@@ -15,3 +15,23 @@ The user-run target returned the value actually printed in the selected historic
 The earlier verification relied too heavily on a tight numerical crop. The corrected audit retained the multi-level mortgage-status header, complete row label, adjacent mortgaged count, and the neighboring city and in-precinct rows. Future Geography candidates using dense census scans require two independent visual reads at original resolution before testing.
 
 The candidate is retired. Exact values and place names remain only in ignored local notes.
+
+## 2026-08-11 - taluk headquarters versus temple-village row
+
+### Manual result
+
+The user-run target identified the correct historic district and taluk but returned the female population printed for the taluk headquarters on an earlier census page. The prompt asked for a different village in the same taluk. The official village table gives a different female value in that village's row.
+
+The returned number is therefore not a random hallucination. It is a real value under the same year and sex column, but at the wrong administrative row. The candidate is retained as a meaningful failure.
+
+### First established divergence
+
+The heritage clues establish the temple village and its taluk. The response named that village correctly, so the identity chain succeeded. The first provable error is the terminal census scope: the model substituted the row for the similarly named taluk headquarters for the row of the selected village.
+
+### Reusable lessons
+
+- Historical village tables can sustain a fair confuser when the taluk headquarters and target settlement appear in the same administrative section and share a name stem.
+- Record the returned wrong value's exact row, year, and sex column. This proves a scope substitution without speculating about the model's internal search.
+- Preserve the full hierarchy through the final lookup: district, taluk, hobli, village, census year, and sex column.
+- Do not infer that correct entity prose proves correct table alignment. Recheck the row label beside the returned number.
+- A long scan becomes useful difficulty when an independently established subdistrict and village must both remain in scope; page length alone is not difficulty.

@@ -172,3 +172,20 @@ A previously verified acquisition-and-filing prompt was returned because its wor
 - Remove agency-by-agency attribution, form number, schedule, item, column, mnemonic, certificate, and report date from the prompt when the evidence chain can discover them.
 - Replace `select`, `exclude`, and `answer with` with an interrogative whose subject already fixes the legal entity, reporting period, field meaning, unit, and expected numeric type.
 - Treat the repaired wording as a new prompt version. The old target response and share link cannot support it; a fresh user-run test is mandatory.
+
+## 2026-08-11 - named officer to one-row bank table retired
+
+### Manual result
+
+The user-run target returned the verified securities amount from the intended national-bank row in 3 minutes 16 seconds. The candidate is retired as correctly solved.
+
+### Why the route collapsed
+
+- The prompt named the report year and reporting date, the city, the former Comptroller, and the requested resource-column heading.
+- The biographical clue selected one bank president, and the annual report placed that president and bank on one row.
+- Once that row was found, the answer was direct transcription from a clearly labelled neighboring column.
+- Similar bank titles added visual clutter but did not leave a live alternative after the president's name was matched.
+
+### Reusable correction
+
+Reject `named historical officer -> unique institution row -> named financial column` candidates. A future Finance prompt should require a consequential version, charter, period, or field-semantics decision after the institution has been identified; a dense row of adjacent amounts is not sufficient by itself.
