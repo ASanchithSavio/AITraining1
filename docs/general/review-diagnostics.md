@@ -91,4 +91,22 @@ Measure difficulty after the main record has been identified. A candidate is wea
 
 Fingerprint a retired architecture by its source-family sequence and final two selection operations, not by its named entities. Changing names, years, jurisdictions, or terminal fields does not rehabilitate a solved deterministic funnel. Reject a near-match before delivery and require a materially different terminal mechanism.
 
+### Fast-solve architectures retired on 2026-08-11
+
+Three independently researched candidates were solved correctly in 39 to 66 seconds. Their shared defect was not factual validity but terminal over-specification:
+
+- **Same-document signature carry:** a complete distribution signature uniquely selected a row, and its printed identifier led directly to a total in an adjacent table.
+- **Exact accession leak:** a museum accession range acted as a searchable terminal-row key, while the prompt also named the answer column and the local legend decoded the abbreviation.
+- **One-page roster collapse:** an exact event, date, repository, surname, and occupation exposed a one-page list in which the requested entry sat under a visible heading.
+
+Add these pre-test questions:
+
+1. Does the prompt provide an identifier that can be searched verbatim inside the terminal source?
+2. Does a detailed clue signature select exactly one row before any independent reasoning is required?
+3. Does the prompt explicitly describe the tempting wrong row, subtotal, sibling, or surname match?
+4. Once the document opens, can the answer be recovered through one row lookup plus a local legend or heading?
+5. Are purported upstream clues still necessary after an accession number, event date, order number, or full row signature is known?
+
+If any answer is yes, remove the leak or reject the candidate. Several plausible neighbouring values do not create difficulty when the prompt has already explained how to avoid each one.
+
 The objective is a repeatable, legitimate wrong answer—not a refusal and not a lucky one-off miss.

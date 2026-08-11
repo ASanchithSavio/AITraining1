@@ -51,3 +51,21 @@ The user reported that the required extended-thinking target model returned the 
 ### Reusable correction
 
 Do not promote a cross-page table candidate merely because the row labels disappear on the continuation page. Require at least one additional post-identification decision—such as an edition crosswalk, object-status change, revised catalogue field, or independently selected analytical method—that controls the terminal cell. Retire every candidate answered correctly by the target model, regardless of elapsed time.
+
+## 2026-08-11 - exact-accession pigment-row candidate retired
+
+### Manual result
+
+The user-run target model returned the verified pigment in 45 seconds. It found the combined accession-range row, separated the pigment abbreviation from the analytical-method letters, and expanded the abbreviation correctly. The candidate is retired as solved.
+
+### Why the candidate was weak
+
+- The exact accession range was supplied in the prompt, functioning as a terminal row identifier rather than an upstream clue.
+- The artist, source family, combined-row behavior, and requested `Other` column were also stated explicitly.
+- Once the study was opened, the solver needed only one row lookup and one abbreviation-key lookup within the same appendix.
+- The winter-scroll and blue-pigment facts became decorative after the accession range had already fixed the row.
+- Method letters following the pigment abbreviation looked confusable, but the appendix legend resolved them directly.
+
+### Reusable correction
+
+Do not expose a museum accession number when that number is searchable inside the terminal technical table. An accession clue is useful only when it must first be derived from a separate catalogue record and when another substantive choice remains after the accession is known. Reject `exact accession -> named column -> local legend` designs before testing.

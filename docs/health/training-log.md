@@ -40,3 +40,21 @@ The exact prompt, answer, identifiers, URLs, page coordinate, and user-run respo
 - Four necessary sources do not make a hard prompt when each source reduces the task to a single deterministic join.
 - A terminal table with many adjacent numbers is weak when the prompt names every coordinate and the preceding source gives the table's exact searchable identifier.
 - Reject `identity anchor -> binary selector -> explicit crosswalk -> named cell` designs before testing, even when the route is long and every confuser is source-grounded.
+
+## 2026-08-11 - same-document distribution-to-case-table candidate retired
+
+### Manual result
+
+The user-run target model returned the verified total in 39 seconds. The response selected the intended filling lot, read the paralytic and non-paralytic subtotals correctly, rejected the manufacturer-order subtotal, and gave the correct final value. The candidate is retired as solved.
+
+### Why the candidate was weak
+
+- The prompt disclosed the report month, subject, manufacturer order, and the selected lot's complete four-jurisdiction distribution signature.
+- The distribution signature uniquely identified one filling lot in Table 6; the answer then required carrying that printed lot number into Table 5 of the same 20-page report.
+- The prompt explicitly warned against the manufacturer-order subtotal, revealing the principal row-scope trap before the solver encountered it.
+- No independent source handoff, version boundary, terminology crosswalk, or unresolved scope decision remained after the report was found.
+- The adjacent values were visually clear. They created a possible transcription error, not a durable reasoning failure.
+
+### Reusable correction
+
+Reject `unique row signature -> copied identifier -> nearby total in the same document` candidates. A second table counts as a real hop only when it introduces a new semantic or version decision; carrying an exact lot number between adjacent tables is ordinary lookup. Do not describe the intended wrong subtotal in the prompt unless that distinction must be inferred from independent evidence.

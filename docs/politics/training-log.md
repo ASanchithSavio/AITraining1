@@ -61,3 +61,21 @@ The candidate began with a small bounded set of election winners and used two pu
 - Do not count an easy geographic crosswalk as a meaningful post-identification decision when it selects a unique directory row.
 - Future Politics candidates must leave at least two plausible, source-backed answers alive after identity resolution and resolve them through a new mechanism such as a controlling amendment, correction, sequence, footnote, or genuinely consequential version boundary.
 - Compare the final two operations of every new candidate against ignored retirement records before it can be delivered for testing.
+
+## 2026-08-11 - one-page seating-roster candidate retired
+
+### Manual result
+
+The user-run target model identified the intended guest and returned the correct table number in 1 minute 6 seconds. It also distinguished the guest from the two other surname matches. The candidate is retired as solved.
+
+### Why the candidate was weak
+
+- The exact dinner date, honored guest, repository, surname, and target occupation reduced retrieval to one known one-page seating list.
+- The biographical clue independently identified the publisher, while the prompt itself classified the other surname matches as the publisher's wife and another named guest.
+- After identifying the publisher, the only remaining action was copying the table heading above one clearly printed name.
+- The multiple surname entries appeared to create a bounded-identity problem, but their roles were already resolved in the question.
+- The clue chain increased prose length without creating a post-identification scope, chronology, or document-version decision.
+
+### Reusable correction
+
+Reject `named event and date -> one-page roster -> explicitly classified surname match` candidates. For a roster task to be difficult, the target identity should emerge from an intersection that is not independently stated in the prompt, and the roster should feed a further evidence decision rather than serve as the terminal transcription page.
