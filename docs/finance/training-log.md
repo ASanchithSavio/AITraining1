@@ -189,3 +189,18 @@ The user-run target returned the verified securities amount from the intended na
 ### Reusable correction
 
 Reject `named historical officer -> unique institution row -> named financial column` candidates. A future Finance prompt should require a consequential version, charter, period, or field-semantics decision after the institution has been identified; a dense row of adjacent amounts is not sufficient by itself.
+
+## 2026-08-16 - regulatory-filing outcome and source audit
+
+The newest Finance runs separated grounded category errors from access failures. Two completed responses returned real amounts from the wrong regulatory category or risk-weight bucket while the correct institution and period were otherwise recoverable. Those can support meaningful failure only after the returned amount is located in the filed table and the exact category difference is stated. Several other runs ended with no final amount after lengthy searches; those are private retrieval outcomes, not submission-ready failures.
+
+Source review also rejected machine-readable or interactive terminal evidence even when the value was correct. A live API, ArcGIS-style filter, spreadsheet download, generic regulator search portal, or constructed query is not a substitute for a fixed human-readable record. The preferred terminal citation is a direct browser-open HTML/PDF facsimile that visibly fixes the reporter, report date, schedule, item, unit, and value.
+
+### Reusable lessons
+
+- Carry legal entity, regulator identifier, charter type, transaction boundary, and report date together through the lookup.
+- Compare every sibling category and adjacent risk-weight column before classifying the model's returned amount.
+- Do not infer a category error merely because the returned number is wrong; locate that number in the filing first.
+- Treat timeouts and conversation-limit events as `no_final_answer`, not meaningful model failures.
+- Use API and bulk data privately for discovery or cross-checking, but cite a fixed human-readable answer-bearing record.
+- Test a direct facsimile URL in a fresh session and confirm that it opens the completed filing without prior portal state.

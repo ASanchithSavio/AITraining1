@@ -64,6 +64,7 @@ prompt_pasted_exactly:
 intermediate_statuses:
 elapsed_time_to_terminal_result:
 final_answer:
+outcome_class: correct | grounded_wrong | no_final_answer | invalid_prompt | invalid_gold | reviewer_reject
 failure_label:
 first_divergence:
 sources_used_or_missed:
@@ -85,9 +86,13 @@ Keep exact prompts, transcripts, private links, client language, and screenshots
 
 Record discarded branches as well as promoted candidates. A search snippet that exposes the terminal pair, an obvious one-row transcription, or a result page that prints the answer is useful training evidence even though the candidate is never tested.
 
-Do not classify a run from elapsed time or an intermediate status. Wait for the terminal model or platform result unless the live rules explicitly define a timeout as failure. A long search is retrieval-cost evidence, not proof that the model was stumped.
+Do not classify a run from elapsed time or an intermediate status. Wait for the terminal model or platform result unless the live rules explicitly define a timeout as failure. A long search is retrieval-cost evidence, not proof that the model was stumped. Under the current reviewer standard, `no_final_answer` remains private evidence and cannot be submitted as a meaningful wrong-answer failure.
 
 When a model eventually answers correctly, retire the architecture unless the run was contaminated, regardless of how long it took. Record the elapsed time as secondary evidence, then identify where the apparent multi-source chain collapsed into a deterministic final lookup. Do not repair such a candidate by adding prose or more upstream identity clues.
+
+For concurrent research tasks, use task history as a read-only evidence source and the repository as the canonical memory. Snapshot active tasks without messaging, interrupting, or treating unfinished reasoning as a conclusion. Before selecting a batch, reconcile the ignored status index so two tasks do not research or test the same architecture independently.
+
+For untested candidates, record `expected_failure_mode` only in ignored local notes. Deliver it only when the user explicitly asks for predictive risk analysis, label it as unobserved, and never reuse it as the failure annotation after a different result.
 
 ## Delivery and change control
 

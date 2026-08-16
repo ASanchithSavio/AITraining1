@@ -126,10 +126,33 @@ The two useful wrong answers exposed stable, verifiable substitutions:
 - an administrative-row error in which a value from the taluk headquarters replaced the value for the selected village; and
 - a coefficient-family and configuration-block error in which a real derivative from one flap block replaced the requested basic coefficient from another block.
 
-The non-answer correctly found the controlling corrected table but stopped before reading a legible cell. Preserve it as a documented outcome, but rank it below a grounded wrong-cell result because access-dependent refusal is less repeatable.
+The non-answer correctly found the controlling corrected table but stopped before reading a legible cell. Preserve it only as an internal diagnostic outcome. Under the current review standard, a refusal, timeout, conversation-limit event, or answerless response is not a meaningful model failure for submission; rerun the exact frozen prompt until the model supplies a final answer, or retire the candidate.
 
 ### Batch-audit rule
 
 For every returned value, search the controlling page and the strongest confusable pages for that exact value. If it is found, name the row, column, version, and scope difference precisely. If it is absent, diagnose only a generic mapping or transcription failure. Never invent a wrong-row story merely because it sounds plausible.
+
+## 2026-08-16 - annotation, wording, and version controls
+
+Recent cross-task reviews exposed failures that occur after the research itself is correct.
+
+### Observed failure versus expected failure
+
+- `Expected failure mode` is a private hypothesis for an untested candidate. It must never be copied into a submission as though the model actually made that error.
+- A meaningful-failure annotation requires a finalized, substantively wrong answer from the exact frozen prompt version.
+- A missing suffix, harmless abbreviation, punctuation difference, equivalent unit, or other cosmetic mismatch is not substantive failure.
+- If the prompt requests a pair or list but the answer field permits one atomic value, the prompt-answer design is invalid. Repair the requested answer type before testing.
+
+### Scope of the failure reason
+
+Write the annotation around four proved facts: the model's returned value, the entity or field requested by the prompt, the verified gold value, and the real source row or scope to which the returned value belongs. Explain the contradiction in the prompt's terms.
+
+Do not pad the annotation with page-navigation details, search behavior, or a speculative account of what the model did internally. Page and row coordinates belong in the golden trajectory. They belong in the failure reason only when they directly prove that the returned value came from a different requested scope.
+
+If the diagnosis depends on an erratum, replacement sheet, amended table, or corrected release, that controlling version must be in the prompt's scope. A model cannot be faulted for returning an original value when the question did not establish that the replacement controls.
+
+### Natural-language preflight
+
+Read the prompt aloud after the technical audit. Replace machine-like phrases such as `the target`, compressed chains of exclusions, and awkward time expressions with ordinary nouns and conventional dates. Fix grammar and attachment without adding a source itinerary. Automated authorship checks are an independent opaque gate; a punctuation change may remove one flagged artifact, but it does not prove why the detector fired or guarantee acceptance.
 
 The objective is a repeatable, legitimate wrong answer—not a refusal and not a lucky one-off miss.

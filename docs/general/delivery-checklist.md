@@ -29,6 +29,9 @@ If the ignored local notes are unavailable, say that exact candidate context is 
 - Do not run the target model when testing is reserved for the user.
 - Prefer an interrogative whose noun already implies the answer type. An imperative such as `Answer with the integer only` can be classified as a process instruction even when it only controls formatting.
 - Bind every model response and share link to the exact prompt version. Any wording change requires a fresh run and a new matching link; never attach an older failure to a repaired prompt.
+- Read the final wording aloud. Replace awkward compressed phrases, repeated `target` constructions, and unnatural temporal wording with ordinary prose while preserving every factual constraint.
+- Check prompt-answer alignment literally: one requested entity or value, one matching atomic gold answer, and no pair or list hidden inside the question.
+- If the answer is directly printed, make that reporting scope clear enough that the question cannot reasonably be read as asking the solver to subtract, convert, or derive a remainder.
 
 ## Authorship-policy gate
 
@@ -57,6 +60,8 @@ Use the smallest causal claim supported by evidence:
 5. **Training change:** record the reusable architecture, wording, or review-gate lesson.
 
 Do not infer an internal browsing path merely because a wrong answer resembles a nearby source value. Describe the proved scope, entity, row, column, or hierarchy error.
+
+Do not submit an `expected failure mode` as a failure reason. For an untested candidate it is only a private risk hypothesis. A refusal, timeout, conversation-limit event, or answerless response is also not a meaningful-failure annotation under the current review standard; preserve it privately and rerun the exact frozen prompt if a finalized result is required.
 
 When the form asks for two to four sentences, cite the decisive field or row, state the verified value, and explain why the returned value does not match. Keep speculative mechanisms and exhaustive lists of every unrelated field in private notes.
 
@@ -100,8 +105,12 @@ For the verification-source list:
 - state each source's exact location, purpose, and necessary fact;
 - classify the actual response as human-readable HTML or PDF before submission;
 - do not cite JSON or YAML in this workflow;
-- validate extensionless archive assets from catalogue metadata, file signature, and rendered content; and
-- count a catalogue page and its original asset as one publication ecosystem.
+- validate extensionless archive assets from catalogue metadata, file signature, and rendered content;
+- count a catalogue page and its original asset as one publication ecosystem;
+- reject search-results URLs, force-download-only files, live filtered data pages, and interactive API views as verification sources;
+- state whether each search was run in a general search engine, a site search, or a catalogue, and quote a query that actually works in that interface;
+- ensure every search term was available from the prompt or an earlier verified step; and
+- click-test the final submitted links in a fresh session, then scan the complete artifact for any superseded URL.
 
 ## After manual or platform feedback
 

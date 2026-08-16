@@ -61,6 +61,20 @@ The final prompt should stand alone as a natural factual question. It should not
 
 The prompt should not reveal a terminal page through a distinctive title, quotation, source name, or answer-only search term. The research path belongs in private verification notes, not in the question.
 
+### Constraint-substitution drafting
+
+One useful drafting method begins with a single verified factual sentence containing the answer. Replace named entities one at a time with objective, source-backed descriptions until the combined constraints still identify exactly one entity. An individual clue may fit several candidates; uniqueness must come from the full intersection, not from vague adjectives such as `famous`, `important`, or `popular`.
+
+- Preserve an exact quoted phrase when a common paraphrase would fit many records.
+- Paraphrase rare evidence only when the new wording preserves the same scope and cannot attach to another entity.
+- Keep table headings, legal categories, scientific fields, and other technical terms exactly as the controlling source labels them.
+- Give a dated letter, report, or release its year when the clue otherwise depends on a moving present-time interpretation.
+- Apply a five-year test: the answer should remain the same five years later because the question is anchored to a completed event, fixed edition, dated filing, or one-time occurrence.
+- Cross-domain identity clues are useful only when they remain necessary and the final answer still belongs honestly to the seeded domain.
+- Bounded counting, sorting, or ranking is acceptable when the set and rule are explicit and the trajectory can reproduce the operation quickly. Reject unbounded enumeration or difficulty based on tedious manual work.
+
+This is a drafting aid, not permission to hide the answer behind unnatural prose. After substitution, rewrite the result as one ordinary question and rerun the uniqueness, grammar, source-necessity, and shortcut checks.
+
 ## 5. Verify before testing
 
 Run deterministic checks first:

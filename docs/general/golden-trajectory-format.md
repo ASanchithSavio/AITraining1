@@ -65,3 +65,17 @@ For each source, record:
 - **Premature uniqueness:** The trajectory names a winner without enumerating or comparing the bounded alternatives.
 - **Version blindness:** It opens one record but never proves that it is the correct record immediately before or after the boundary.
 - **Verification mismatch:** A URL appears in the source list but no trajectory claim consumes it, or a trajectory claim has no supporting source.
+
+## Reproducible discovery and fixed-source gate
+
+Apply these checks to the exact trajectory that will be submitted:
+
+- Name the search interface when it matters: `web search`, `site search`, or `catalogue search`. A query that works in a web search engine must not be presented as though it works in an archive's internal search box.
+- Quote the exact query and reproduce it in the claimed interface before delivery. Every term in the query must come from the prompt or from a fact established in an earlier step. Do not smuggle in a report number, person, institution, sample code, or answer learned later.
+- If the next source is a specialist archive, show the discovery bridge. A neutral web query can locate the archive's collection page; that collection page must then explain why the archive is relevant before its internal catalogue is searched.
+- A search-results page is navigation evidence, not verification evidence. Verification sources must open the direct record, document, or fixed page that contains the cited fact.
+- Prefer fixed, browser-readable HTML or PDF. Reject JSON, YAML, spreadsheet downloads, live API queries, interactive filtered maps, and huge text exports that require manual filtering or `Ctrl+F` as submitted evidence.
+- A parameterized URL is acceptable only when opening it in a fresh session loads one fixed answer-bearing record without asking the reviewer to construct or run a search.
+- For HTML, name the section heading, metadata field, bullet, or opening words of the paragraph. For a PDF, give the physical page and printed page when they differ. For a rotated scan or a table at the bottom of a page, also give the table heading, row label, column label, and one adjacent anchor.
+- Click-test every submitted URL from the final artifact in a fresh session. After replacing a source, scan the whole trajectory and source list for the obsolete URL; fixing the prose while leaving the old link in the attachment is still a failed repair.
+- Count a catalogue record and its downloadable report as one source ecosystem. A metadata page does not create independent corroboration for the PDF it describes.

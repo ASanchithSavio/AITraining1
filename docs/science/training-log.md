@@ -449,3 +449,19 @@ This is a defensible model failure because the returned value can be located exa
 - Do not count an explicit set complement as a reasoning hop. Naming all functioning channels makes the missing channel immediately recoverable.
 - Two volumes of one bulletin remain a deterministic lookup when a detailed sample description supplies the exact join key.
 - Prefer a stable semantic or table-block substitution over a failure caused only by PDF rendering or access.
+
+## 2026-08-16 - cross-task audit of corrections, matrices, and incomplete runs
+
+The latest task-history audit added several distinct outcome classes. A telemetry candidate produced a real adjacent-channel coordinate instead of the requested channel. A corrected aerodynamic table produced a real value from the wrong coefficient family and configuration block. A fan-table candidate selected the wrong terminal field after reaching the controlling replacement page. These remain useful because each returned value can be located in the authoritative source and the first table-scope divergence is provable.
+
+Other candidates were invalid or unusable rather than meaningful failures. One telemetry matrix assigned the same named measurement in two modes, leaving two defensible columns because the prompt did not choose the sampling mode. Several long runs ended without a final numeric answer. Another correction candidate returned the superseded value, but the prompt had not made the replacement version controlling. Those outcomes cannot be repaired by writing a confident failure story after the fact.
+
+### Reusable lessons
+
+- Before freezing a matrix answer, scan the full table for duplicate channel assignments, alternate sampling modes, primary/redundant channels, and continuation pages.
+- For a bottom-of-page or rotated matrix row, record the printed page, physical page, table heading, row number, column heading, and adjacent channel labels.
+- A correction-based failure is in scope only when the question establishes that the corrected or replacement version controls.
+- A wrong value is strongest when it is visible in a specific adjacent channel, field, coefficient family, or superseded block.
+- A refusal or access complaint belongs to the private run log, not a meaningful-failure submission.
+- State the first proved divergence. Do not say that the model chose the wrong bin, channel, or sample when its explanation shows that the selection was correct and only the terminal cell was wrong.
+- Recheck the complete scan before finalizing page references. Errata sheets placed before the title page can shift physical pagination, and the catalogue record plus its PDF still count as one source ecosystem.

@@ -35,3 +35,17 @@ The heritage clues establish the temple village and its taluk. The response name
 - Preserve the full hierarchy through the final lookup: district, taluk, hobli, village, census year, and sex column.
 - Do not infer that correct entity prose proves correct table alignment. Recheck the row label beside the returned number.
 - A long scan becomes useful difficulty when an independently established subdistrict and village must both remain in scope; page length alone is not difficulty.
+
+## 2026-08-16 - reviewer repair for the village-row failure
+
+The underlying wrong-place substitution remained source-grounded, but the first submitted failure annotation did not explain the contradiction tightly enough. It discussed page order and the model's presumed browsing path instead of stating that the returned population belongs to the taluk headquarters excluded by the question, while the temple village's row prints the gold value. The reviewer therefore rejected the annotation as unsupported and out of scope.
+
+A separate automated check also rejected awkward wording that described the historical census with a machine-like time phrase. The natural repair uses an ordinary dated census description and explicit settlement names. Because that wording changes the prompt, the previous response cannot be attached to the revision; a fresh target run and matching link are required.
+
+### Reusable lessons
+
+- In a place-scope failure reason, name the requested settlement, name the real settlement that owns the returned value, and state the gold value. Leave page navigation to the trajectory.
+- Do not claim that the model read a nearby row unless the returned value is actually printed in that row.
+- Make an excluded same-name place part of the question's factual scope if the diagnosis depends on that exclusion.
+- Prefer normal dated prose such as `the 1901 census` over compressed expressions intended to sound historical.
+- Treat an `expected failure reason` written before testing as private only; replace it with the actual observed outcome after the run.
